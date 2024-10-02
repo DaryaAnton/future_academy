@@ -21,6 +21,17 @@
 // --bs-gutter-x: px;
 // --bs-gutter-y: px;
 
+// ОТСТУПЫ
+$spacer: 10px;
+$spacers: (
+  0:0
+);
+
+@for $i from 1 through 150 {
+  $spacers: map-merge($spacers, ($i: (
+        $i * $spacer))
+  );
+}
 
 $grid-breakpoints: (
   xs: 0,
