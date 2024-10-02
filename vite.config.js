@@ -14,6 +14,14 @@ const pages = {
 export default defineConfig({
   root,
   base: './',
+  // base: process.env.NODE_ENV === 'development' ? '/' : '/dist/',
+  // css: {
+  //   preprocessorOptions: {
+  //     scss: {
+  //       additionalData: '@import "src/assets/styles/base/_fonts.scss";',
+  //     },
+  //   }
+  // },
   plugins: [
     legacy({
       targets: ['defaults', 'not IE 11'],
@@ -37,22 +45,29 @@ export default defineConfig({
       input: {
         ...pages,
       },
+      // output: {
+      //   assetFileNames: ({ name }) => {
+      //     name = name.toLowerCase();
+
+      //     if (/\.(gif|jpe?g|png|svg)$/.test(name ?? '')) {
+      //       return 'assets/images/[name]-[hash][extname]';
+      //     }
+
+      //     if (/\.css$/.test(name ?? '')) {
+      //       return 'assets/styles/[name]-[hash][extname]';
+      //     }
+
+      //     return 'assets/[name]-[hash][extname]';
+      //   },
+      // },
       output: {
-        assetFileNames: ({ name }) => {
-          name = name.toLowerCase();
-
-          if (/\.(gif|jpe?g|png|svg)$/.test(name ?? '')) {
-            return 'assets/images/[name]-[hash][extname]';
-          }
-
-          if (/\.css$/.test(name ?? '')) {
-            return 'assets/styles/[name]-[hash][extname]';
-          }
-
-          return 'assets/[name]-[hash][extname]';
-        },
+        entryFileNames: `[name].js`,
+        chunkFileNames: `[name].js`,
+        assetFileNames: `[name].[ext]`,
       },
     },
+    minify: true,
+    write: true,
   },
   resolve: {
     alias: [

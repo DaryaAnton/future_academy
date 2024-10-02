@@ -1,0 +1,52 @@
+//это стили для градиентных текстов. Нужно учитывать, что для корректного отображения градиента, использовался display: inline-block; так что что бы центрировать этот элемент придется его оборачивать и использовать flex
+.owl {
+    font-family: $font-family--monserrat;
+    display: inline-block;
+    width: fit-content;
+    color: $color-text-light;
+    -webkit-text-stroke: 6px transparent;
+    text-align: center;
+    background: linear-gradient(45deg, $first-color-gradient 0%, $last-color-gradient 100%);
+    background-clip: text;
+    & h3 {
+      font-size: 50px;
+    }
+}
+
+.footer {
+  background-color: $main-background;
+  padding: 70px 0;
+  &__logo {
+    width: 83px;
+    height: 58px;
+    border: 1px solid $color-text-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-text-light;
+    margin-bottom: 43px;
+  }
+  &__wrapper {
+    & ul {
+      color: $color-text-light;
+      list-style-type:  none;
+      padding: 0;
+      & a {
+        text-decoration: none;
+        color: $color-text-light;
+        line-height: 36px;
+        cursor: pointer;
+        &:hover {
+          color: $first-color-gradient;
+        }
+      }
+    }
+    & h6{
+      color: $color-text-light;
+      font-weight: 700;
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+}
