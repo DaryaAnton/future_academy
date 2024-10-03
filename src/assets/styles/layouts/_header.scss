@@ -1,0 +1,92 @@
+.header-main {
+  &__main-nav {
+    svg {
+      margin-right: 6px;
+    }
+  }
+
+  a {
+    transition: color .3s ease;
+  }
+
+  a:hover {
+    color: $color-gradient-first;
+  }
+
+  &--light {
+    color: $color-text-main;
+    background-color: $color-text-light;
+
+    .header-main__logo {
+      color: $main-background;
+    }
+  }
+
+  &--dark {
+    color: $color-text-light;
+    background-color: $main-background;
+  }
+
+  .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    border: none;
+    background-color: transparent;
+
+    span {
+      text-decoration: underline;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .dropdown-icon {
+    transition: transform .3s ease;
+  }
+
+  .dropdown-menu {
+    min-width: max-content;
+
+    padding: 0;
+    padding-top: 22px;
+
+    border: none;
+    background-color: transparent;
+  }
+
+  .dropdown-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.6);
+    background: #f6f7f9;
+  }
+
+  .form-check-input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .form-check-label {
+    cursor: pointer;
+  }
+
+  .dropdown:hover {
+    .dropdown-icon {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-menu {
+      display: block;
+    }
+  }
+}
