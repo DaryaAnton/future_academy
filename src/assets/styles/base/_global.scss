@@ -12,6 +12,17 @@ ol {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
 .container {
   padding: 0 10px;
 }
