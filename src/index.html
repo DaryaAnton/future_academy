@@ -7,40 +7,35 @@
   <title>Main</title>
 </head>
 
-<body>
-  <header class="header-main header-main--light py-2">
-    <div class="container">
-      <div class="row justify-content-between align-items-center">
+<body class="page-body">
+  <header class="header-main header-main--light">
+    <nav class="navbar navbar-expand-xl py-2">
+      <div class="container">
+        <a href="index.html" class="header-main__logo me-xl-6">
+          <svg width="100" height="70">
+            <use xlink:href="/icons/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <button class="navbar-toggle d-xl-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav align-items-center gap-4 me-auto">
+            <li class="nav-item">
+              <a href="#!">
+                <svg width="20" height="16">
+                  <use xlink:href="/icons/sprite.svg#categories"></use>
+                </svg>Все курсы</a>
+            </li>
+            <li class="nav-item"><a href="#!">Мероприятия</a></li>
+            <li class="nav-item"><a href="#!">Базы знаний</a></li>
+            <li class="nav-item"><a href="#!">Карьера</a></li>
+          </ul>
 
-        <div class="col-auto">
-          <a href="index.html" class="header-main__logo">
-            <svg width="100" height="70">
-              <use xlink:href="/icons/sprite.svg#logo"></use>
-            </svg>
-          </a>
-        </div>
-
-        <div class="col-auto">
-          <nav class="header-main__main-nav">
-            <ul class="row align-items-center gx-4">
-              <li class="col-auto">
-                <a href="#!" class="d-flex align-items-center">
-                  <svg class="" width="20" height="16">
-                    <use xlink:href="/icons/sprite.svg#categories"></use>
-                  </svg>
-                  Все курсы
-                </a>
-              </li>
-              <li class="col-auto"><a href="#!">Мероприятия</a></li>
-              <li class="col-auto"><a href="#!">Базы знаний</a></li>
-              <li class="col-auto"><a href="#!">Карьера</a></li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="col-auto">
-          <ul class="row align-items-center gx-4">
-            <li class="col-auto dropdown">
+          <ul class="row row-cols-auto align-items-center gx-4">
+            <li class="col dropdown">
               <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" type="button">
                 <svg width="17" height="20">
                   <use xlink:href="/icons/sprite.svg#pin"></use>
@@ -54,20 +49,20 @@
 
               <div class="dropdown-menu">
                 <div class="dropdown-list">
-                  <div class="form-check d-flex align-items-center">
+                  <div class="form-check">
                     <input class="form-check-input me-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                     <label class="form-check-label" for="flexRadioDefault1">
                       Дзержинск
                     </label>
                   </div>
-                  <div class="form-check d-flex align-items-center">
+                  <div class="form-check">
                     <input class="form-check-input me-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
                       checked>
                     <label class="form-check-label" for="flexRadioDefault2">
                       Нижний Новгород
                     </label>
                   </div>
-                  <div class="form-check d-flex align-items-center">
+                  <div class="form-check">
                     <input class="form-check-input me-1" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
                     <label class="form-check-label" for="flexRadioDefault3">
                       On-line
@@ -77,11 +72,11 @@
               </div>
             </li>
 
-            <li class="col-auto">
+            <li class="col">
               <a href="tel:8 800 950-33-98">8 800 950-33-98</a>
             </li>
 
-            <li class="col-auto">
+            <li class="col">
               <a href="#!">
                 <svg width="18" height="19">
                   <use xlink:href="/icons/sprite.svg#user"></use>
@@ -92,27 +87,27 @@
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
   </header>
 
   <main>
     <section class="example">
       <div class="container pt-5">
         <div class="row row-cols-sm-5 g-2">
-          <div class="col-6" style="background-color: aquamarine;">
-            <div class="block">Одна из трёх колонок</div>
+          <div class="col-6">
+            <div class="block" style="background-color: aquamarine;">Одна из трёх колонок</div>
           </div>
-          <div class="col-6" style="background-color: aquamarine;">
-            <div class="block">Одна из трёх колонок</div>
+          <div class="col-6">
+            <div class="block" style="background-color: aquamarine;">Одна из трёх колонок</div>
           </div>
-          <div class="col-4" style="background-color: green;">
-            <div class="block">Одна из трёх колонок</div>
+          <div class="col-4">
+            <div class="block" style="background-color: green;">Одна из трёх колонок</div>
           </div>
-          <div class="col-4" style="background-color: green;">
-            <div class="block">Одна из трёх колонок</div>
+          <div class="col-4">
+            <div class="block" style="background-color: green;">Одна из трёх колонок</div>
           </div>
-          <div class="col-4" style="background-color: green;">
-            <div class="block">Одна из трёх колонок</div>
+          <div class="col-4">
+            <div class="block" style="background-color: green;">Одна из трёх колонок</div>
           </div>
         </div>
         <a href="./about/about.html">about</a>
