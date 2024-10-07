@@ -1,3 +1,9 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 body {
   font-family: $font-family--monserrat;
   font-weight: 400;
@@ -21,6 +27,12 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+}
+
+.page-body {
+  &--lock {
+    overflow: hidden;
+  }
 }
 
 .container {

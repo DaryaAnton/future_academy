@@ -1,1 +1,3 @@
-console.log('common js');
+import { menu } from './modules/menu.js';
+
+menu();
