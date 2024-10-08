@@ -30,8 +30,14 @@ img {
 }
 
 .page-body {
+  padding-top: 80px;
+
   &--lock {
     overflow: hidden;
+  }
+
+  @media(min-width:1200) {
+    padding-top: 110px;
   }
 }
 
