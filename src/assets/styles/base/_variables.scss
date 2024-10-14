@@ -1,13 +1,23 @@
 $font-family--monserrat: "Montserrat", sans-serif;
 
-$main-background: #00093C;
-$color-text-main: #000;
-$color-text-light: #fff;
-$color-gradient-first: #f7941d;
-$color-gradient-last: #27aae1;
-$gray4: #BDBDBD; // цвет назван как в макете, после прочтения удалить)
-$gray2: #4F4F4F; // цвет назван как в макете, после прочтения удалить)
-$color-orang-hover: #FFAE4D;
+$color-primary:           #000000;
+$color-secondary:         #FFFFFF;
 
-$color-main-gradient: 90deg, rgb(247, 148, 29), rgb(39, 170, 225) 100%;
-$color-gray--dark: #333333;
+$color-orange:            #F7941D;
+$color-orange--light:     #FFAE4D;
+$color-orange--lighter:   #FFCE94;
+
+$color-blue:              #27AAE1;
+$color-blue--light:       #C7EEFF;
+$color-blue--dark:        #00093C;
+
+$color-gray--1:           #333333;
+$color-gray--2:           #BDBDBD;
+$color-gray--4:           #4F4F4F;
+
+$color-green:             #B8EFCF;
+$color-yellow:            #FFE38E;
+$color-purple:            #DDDDFF;
+$color-pink:              #FFEEF6;
+
+$color-gradient--90deg:     90deg, rgb(247, 148, 29), rgb(39, 170, 225) 100%;

@@ -1,10 +1,10 @@
 .header-main {
   &--light {
     .header-main__logo {
-      color: $main-background;
+      color: $color-blue--dark;
 
       &:hover {
-        color: $color-gradient-first;
+        color: $color-orange;
       }
     }
 
@@ -13,13 +13,13 @@
       & span,
       &::after,
       &::before {
-        background-color: $main-background;
+        background-color: $color-blue--dark;
       }
     }
 
     .navbar {
-      color: $color-text-main;
-      background-color: $color-text-light;
+      color: $color-primary;
+      background-color: $color-secondary;
     }
   }
 
@@ -29,17 +29,17 @@
       & span,
       &::after,
       &::before {
-        background-color: $color-text-light;
+        background-color: $color-secondary;
       }
     }
 
     .navbar {
-      color: $color-text-light;
-      background-color: $main-background;
+      color: $color-secondary;
+      background-color: $color-blue--dark;
     }
 
     .dropdown-toggle {
-      color: $main-background;
+      color: $color-blue--dark;
     }
   }
 
@@ -48,7 +48,7 @@
     font-weight: 500;
 
     &:hover {
-      color: $color-gradient-first;
+      color: $color-orange;
     }
   }
 
@@ -90,7 +90,7 @@
       & span,
       &::after,
       &::before {
-        background-color: $color-orang-hover;
+        background-color: $color-orange--light;
       }
     }
 
@@ -192,10 +192,10 @@
     cursor: pointer;
 
     &:hover {
-      border-color: $main-background;
+      border-color: $color-blue--dark;
 
       &+.form-check-label {
-        color: $main-background;
+        color: $color-blue--dark;
         transition: color .3s ease;
       }
     }
@@ -206,20 +206,20 @@
 
     &:checked {
       background-color: transparent;
-      border-color: $main-background;
+      border-color: $color-blue--dark;
 
       background-image: url('/icons/common/circle.svg');
       background-size: 10px;
 
       &+.form-check-label {
-        color: $main-background;
+        color: $color-blue--dark;
       }
     }
   }
 
   .form-check-label {
     font-weight: 500;
-    color: $color-gray--dark;
+    color: $color-gray--1;
     cursor: pointer;
   }
 }
@@ -228,13 +228,13 @@
   .header-main {
     &--dark {
       .dropdown-toggle {
-        color: $color-text-light;
+        color: $color-secondary;
       }
     }
 
     &--light {
       .dropdown-toggle {
-        color: $main-background;
+        color: $color-blue--dark;
       }
     }
 
@@ -283,9 +283,9 @@
           height: 4px;
           width: 0;
 
-          background: -webkit-linear-gradient($color-main-gradient);
-          background: -moz-linear-gradient($color-main-gradient);
-          background: linear-gradient($color-main-gradient);
+          background: -webkit-linear-gradient($color-gradient--90deg);
+          background: -moz-linear-gradient($color-gradient--90deg);
+          background: linear-gradient($color-gradient--90deg);
 
           transform: translate(-50%, 61px);
           transition: width .3s ease;
@@ -326,10 +326,14 @@
       height: calc(100vh - 80px);
       width: 100%;
       padding: 33px 30px 55px 10px;
-      background: $color-text-light;
+      background: $color-secondary;
 
       a {
-        color: $main-background;
+        color: $color-blue--dark;
+
+        &:hover {
+          color: $color-orange--light;
+        }
       }
     }
 

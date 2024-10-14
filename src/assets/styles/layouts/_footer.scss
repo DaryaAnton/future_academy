@@ -3,7 +3,7 @@
     position: relative;
     transform-style: preserve-3d;
     z-index: 5;
-    background-color: $color-text-light;
+    background-color: $color-secondary;
     border-radius: 20px;
     margin-bottom: -40px;
 
@@ -12,7 +12,7 @@
       position: absolute;
       inset: 8px;
       transform: translate3d(0px, 0px, -1px);
-      background: linear-gradient(45deg, $color-gradient-first 0%, $color-gradient-last 100%);
+      background: linear-gradient(45deg, $color-orange 0%, $color-blue 100%);
       filter: blur(10px);
     }
   }
@@ -25,7 +25,7 @@
 
   &__speech {
     width: 91%;
-    background: $color-text-light;
+    background: $color-secondary;
     border-radius: 30px;
     position: relative;
     padding: 20px 15px;
@@ -33,7 +33,7 @@
     &:after {
       border-radius: 30px;
       content: '';
-      background-image: linear-gradient(45deg, $color-gradient-first 0%, $color-gradient-last 100%);
+      background-image: linear-gradient(45deg, $color-orange 0%, $color-blue 100%);
       top: -2px;
       left: -2px;
       bottom: -2px;
@@ -72,7 +72,7 @@
       position: absolute;
       top: 15px;
       left: -35px;
-      border-top: 2px solid $color-gradient-first;
+      border-top: 2px solid $color-orange;
       transform: rotate(-45deg);
     }
 
@@ -83,7 +83,7 @@
       position: absolute;
       top: 30px;
       left: -30px;
-      border-top: 2px solid $color-gradient-first;
+      border-top: 2px solid $color-orange;
     }
   }
 }
@@ -95,31 +95,31 @@
     border: none;
     outline: none;
     background-color: rgba(0, 9, 60, .1);
-    color: $gray2;
+    color: $color-gray--2;
     padding-left: 19px;
     font-size: 14px;
   }
 
   &__text {
     font-size: 10px;
-    color: $gray2;
+    color: $color-gray--2;
     text-wrap: balance;
   }
 }
 
 .footer {
-  background-color: $main-background;
+  background-color: $color-blue--dark;
 
   &__logo {
     width: 83px;
     height: 58px;
-    color: $color-text-light;
+    color: $color-secondary;
     margin-bottom: 43px;
   }
 
   &__wrapper {
     & h6 {
-      color: $color-text-light;
+      color: $color-secondary;
       font-weight: 700;
       margin-bottom: 16px;
       font-size: 16px;
@@ -128,13 +128,13 @@
 
     & ul {
       & a {
-        color: $color-text-light;
+        color: $color-secondary;
         line-height: 36px;
         transition: all .4s;
         cursor: pointer;
 
         &:hover {
-          color: $color-gradient-first;
+          color: $color-orange;
         }
       }
     }
@@ -151,18 +151,18 @@
     margin-top: 30px;
 
     &-svg {
-      color: $color-text-light;
+      color: $color-secondary;
       transition: all .4s;
 
       &:hover {
-        color: $color-gradient-first;
+        color: $color-orange;
       }
     }
   }
 
   &__copyright {
     margin-top: 30px;
-    color: $gray4;
+    color: $color-gray--4;
     font-size: 12px;
   }
 }
@@ -179,6 +179,7 @@
         font-size: 14px;
       }
     }
+
     &__img {
       top: 17%;
       left: -10%;
@@ -204,13 +205,16 @@
       }
     }
   }
+
   .owl {
     &__img {
       top: 5%;
     }
+
     &__card {
       margin-bottom: 0;
       border-radius: 0;
+
       &::before {
         background: transparent;
       }
