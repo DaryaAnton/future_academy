@@ -224,7 +224,7 @@
   }
 }
 
-@media(min-width:768px) {
+@media(min-width: $width-md) {
   .header-main {
     &--dark {
       .dropdown-toggle {
@@ -259,7 +259,7 @@
 
 
 
-@media(min-width:1200px) {
+@media(min-width: $width-xl) {
   .header-main {
     .header-main__logo {
       svg {
@@ -301,7 +301,7 @@
   }
 }
 
-@media(max-width:767px) {
+@media(max-width: 767px) {
   .header-main {
     .dropdown.active {
       .dropdown-icon {
@@ -315,7 +315,7 @@
   }
 }
 
-@media(max-width:1199px) {
+@media(max-width: 1199px) {
   .header-main {
     .navbar-collapse {
       position: absolute;
