@@ -1,26 +1,9 @@
 .owl {
-  &__card {
-    position: relative;
-    transform-style: preserve-3d;
-    z-index: 5;
-    background-color: $color-secondary;
-    border-radius: 20px;
-    margin-bottom: -40px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 8px;
-      transform: translate3d(0px, 0px, -1px);
-      background: linear-gradient(45deg, $color-orange 0%, $color-blue 100%);
-      filter: blur(10px);
-    }
-  }
-
   &__img {
     position: absolute;
     top: 9%;
-    left: -5%;
+    left: -15%;
+    width: 45%;
   }
 
   &__speech {
@@ -43,13 +26,11 @@
     }
 
     &-title {
-      font-size: 24px;
-      font-weight: 700;
+      font-size: 18px;
     }
 
     &-text {
-      font-size: 16px;
-      font-weight: 500;
+      font-size: 12px;
       text-wrap: balance;
     }
   }
@@ -59,7 +40,7 @@
     height: 0;
     display: block;
     position: absolute;
-    top: 100px;
+    top: 80px;
     left: -29px;
     z-index: -1;
     border-bottom: 30px solid #fff;
@@ -85,25 +66,6 @@
       left: -30px;
       border-top: 2px solid $color-orange;
     }
-  }
-}
-
-.form {
-  &__input {
-    height: 50px;
-    border-radius: 6px;
-    border: none;
-    outline: none;
-    background-color: rgba(0, 9, 60, .1);
-    color: $color-gray--2;
-    padding-left: 19px;
-    font-size: 14px;
-  }
-
-  &__text {
-    font-size: 10px;
-    color: $color-gray--2;
-    text-wrap: balance;
   }
 }
 
@@ -167,57 +129,110 @@
   }
 }
 
+.form {
+  &__input {
+    height: 50px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 9, 60, .1);
+    color: $color-gray--2;
+    padding-left: 19px;
+    font-size: 14px;
+  }
+
+  &__text {
+    font-size: 10px;
+    color: $color-gray--2;
+    text-wrap: balance;
+  }
+}
+
+
 //media
-@media screen and (max-width: $width-xl) {
+
+@media screen and (min-width: 395px) {
   .owl {
-    &__speech {
-      &-title {
-        font-size: 20px;
-      }
-
-      &-text {
-        font-size: 14px;
-      }
-    }
-
     &__img {
-      top: 17%;
-      left: -10%;
+      top: 3%;
+      left: -2%;
+      width: 36%;
+    }
+  }
+}
+
+@media screen and (min-width: 505px) {
+  .owl {
+    &__img {
+      top: 0%;
+      left: 0%;
+      width: 32%;
+    }
+  }
+}
+@media screen and (min-width: 550px) {
+  .owl {
+    &__img {
       width: 28%;
     }
   }
 }
 
-@media screen and (max-width: $width-lg) {
-  .footer {
-    &__wrapper {
-      & h6 {
-        margin-bottom: 10px;
-        font-size: 14px;
-        line-height: 20px;
-      }
+@media screen and (min-width: $width-sm) {
+  .owl {
+    &__img {
+      top: 2%;
+    }
+  }
+}
 
-      & ul {
-        & a {
-          line-height: 29px;
-          font-size: 12px;
-        }
+@media screen and (min-width: $width-md) {
+  .owl {
+    &__card {
+      transform-style: preserve-3d;
+      z-index: 5;
+      background-color: $color-secondary;
+      border-radius: 20px;
+      margin-bottom: -40px;
+  
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 8px;
+        transform: translate3d(0px, 0px, -1px);
+        background: linear-gradient(45deg, $color-orange 0%, $color-blue 100%);
+        filter: blur(10px);
+      }
+    }
+    &__tail {
+      top: 100px;
+    }
+    &__speech {
+      &-title {
+        font-size: 24px;
+      }
+  
+      &-text {
+        font-size: 16px;
       }
     }
   }
+}
 
+@media screen and (min-width: $width-lg) {
   .owl {
     &__img {
-      top: 5%;
+      top: 25%;
+      left: -11%;
+      width: auto;
     }
-
-    &__card {
-      margin-bottom: 0;
-      border-radius: 0;
-
-      &::before {
-        background: transparent;
-      }
+  }
+}
+@media screen and (min-width: $width-xl) {
+  .owl {
+    &__img {
+      top: 13%;
+      left: -6%;
     }
   }
 }
