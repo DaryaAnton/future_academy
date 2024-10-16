@@ -4,7 +4,7 @@
   color: $color-secondary;
   background-color: $color-blue--dark;
 
-  &--main {
+  &--primary {
     &::before {
       position: absolute;
       right: -2%;
@@ -20,6 +20,72 @@
       background-size: cover;
       background-position: center;
     }
+
+    .hero__title {
+      font-size: 18px;
+      font-weight: 700;
+
+      &:first-child {
+        margin-bottom: 17px;
+      }
+
+      &:nth-child(2) {
+        margin-bottom: 21px;
+      }
+    }
+
+    .col {
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &--secondary {
+    .hero__title {
+      font-size: 24px;
+      font-weight: 700;
+
+      margin-bottom: 21px;
+    }
+
+    .hero__text {
+      margin-bottom: 29px;
+    }
+
+  }
+
+  &__price {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 65px;
+  }
+
+  &__desc {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  &__gradient-top {
+    position: relative;
+    padding-top: 7px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 0;
+
+      left: 0;
+      right: 0;
+
+      height: 2px;
+      width: 100%;
+
+      background: -webkit-linear-gradient(90deg, rgb(247, 148, 29), rgb(39, 170, 225) 100%);
+      background: -moz-linear-gradient(90deg, rgb(247, 148, 29), rgb(39, 170, 225) 100%);
+      background: linear-gradient(90deg, rgb(247, 148, 29), rgb(39, 170, 225) 100%);
+    }
   }
 
   &__mobile-image {
@@ -32,33 +98,15 @@
     }
   }
 
-  &__title {
-    font-size: 18px;
-    font-weight: 700;
-
-    &:first-child {
-      margin-bottom: 17px;
-    }
-
-    &:nth-child(2) {
-      margin-bottom: 21px;
-    }
-  }
-
   &__text {
     font-size: 14px;
     font-weight: 500;
-  }
-
-  .col {
-    padding-top: 30px;
-    padding-bottom: 40px;
   }
 }
 
 @media(min-width: $width-md) {
   .hero {
-    &--main {
+    &--primary {
       background-image: url('/images/hero/bg.jpg');
       background-repeat: no-repeat;
       background-size: cover;
@@ -75,40 +123,102 @@
 
         background-size: auto;
       }
+
+      .hero__title {
+        font-size: 30px;
+      }
+
+      .col {
+        padding-top: 100px;
+        padding-bottom: 150px;
+      }
     }
 
-    &__title {
-      font-size: 30px;
+    &--secondary {
+
+      &::after,
+      &::before {
+        position: absolute;
+        z-index: 0;
+
+        content: "";
+        width: 100%;
+
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+      }
+
+      &::after {
+        top: 24px;
+
+        height: 100%;
+
+        background-image: url('/images/hero/bg-secondary.png');
+      }
+
+      &::before {
+        right: 0;
+        bottom: -10%;
+        left: 0;
+
+        height: 266px;
+
+        background-image: url('/images/hero/bg-content-secondary.png');
+      }
+
+      .hero__title {
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 6px;
+      }
+
+      .hero__text {
+        font-size: 16px;
+        margin-bottom: 44px;
+      }
+
+      .hero__desktop-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
-    .col {
-      padding-top: 100px;
-      padding-bottom: 150px;
+    &__price {
+      margin-bottom: 35px;
+    }
+
+    &__desc {
+      font-size: 28px;
+      margin-bottom: 14px;
     }
   }
 }
 
 @media(min-width: $width-lg) {
   .hero {
-    &__title {
-      font-size: 36px;
+    &--primary {
+      .hero__title {
+        font-size: 36px;
 
-      &:first-child {
-        margin-bottom: 26px;
+        &:first-child {
+          margin-bottom: 26px;
+        }
+
+        &:nth-child(2) {
+          margin-bottom: 41px;
+        }
       }
 
-      &:nth-child(2) {
-        margin-bottom: 41px;
+      .hero__text {
+        font-size: 20px;
       }
-    }
 
-    &__text {
-      font-size: 20px;
-    }
-
-    .col {
-      padding-top: 126px;
-      padding-bottom: 175px;
+      .col {
+        padding-top: 126px;
+        padding-bottom: 175px;
+      }
     }
   }
 }
