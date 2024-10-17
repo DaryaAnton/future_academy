@@ -1,5 +1,5 @@
-import { menu } from './modules/menu.js';
-import {cardSlider} from './modules/cardSlider.js'
+import { menu } from './base/menu.js';
+import { cardSlider } from './modules/cardSlider.js';
 
-menu();
-cardSlider();
+menu(); //подключается по всему сайту
+cardSlider(); //подключать на нужной странице
