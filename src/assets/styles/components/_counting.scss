@@ -1,0 +1,50 @@
+.counting {
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 133%;
+  }
+
+  &__number {
+    font-weight: 500;
+    font-size: 64px;
+    letter-spacing: 0.1em;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 189%;
+  }
+
+  .text-gradient {
+    padding: 0 3px;
+
+    color: $color-body;
+
+    background-color: $color-primary;
+    background-image: linear-gradient($color-gradient--90deg);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 8px transparent;
+  }
+}
+
+@media(min-width: $width-md) {
+  .counting {
+    margin-top: -45px;
+
+    &__title {
+      font-size: 24px;
+      line-height: 142%;
+    }
+
+    &__number {
+      font-size: 86px;
+    }
+
+    &__text {
+      font-size: 20px;
+      line-height: 170%;
+    }
+  }
+}
