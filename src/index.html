@@ -228,7 +228,23 @@
         </div>
       </div>
     </section>
+    <section class="video pt-md-7 pb-md-16">
+      <div class="container">
+        <div class="video__wrapper position-relative d-flex justify-content-center">
+          <div class="video__bg"></div>
 
+          <video class="video__player w-100 rounded" poster="/images/video/poster.jpg" preload muted="true"
+            playsinline="">
+            <source src="/videos/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <button class="video__button position-absolute z-1 " type="button" aria-label="Play video">
+            <img src="/images/video/play.svg" width="100%" height="100%" alt="Play icon">
+          </button>
+        </div>
+      </div>
+    </section>
 
 
     <!--news------------------------------------>
