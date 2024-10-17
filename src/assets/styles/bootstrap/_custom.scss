@@ -27,7 +27,7 @@ $spacers: (
   0:0
 );
 
-@for $i from 1 through 10 {
+@for $i from 1 through 20 {
   $spacers: map-merge($spacers, ($i: (
         $i * $spacer))
   );
