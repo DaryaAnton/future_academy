@@ -22,3 +22,13 @@
     }
   }
 }
+
+.news__card-banner-btn {
+  background-color: transparent;
+  border: 2px solid $color-primary;
+  border-radius: 10px;
+  color: $color-primary;
+  padding: 17px 80px;
+  font-size: 14px;
+  font-weight: 500;
+}
