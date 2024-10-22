@@ -1,0 +1,61 @@
+.news {
+  &__card {
+    &_orange {
+      background-color: $color-orange;
+    }
+    &_sky {
+      background-color: $color-sky;
+    }
+    &_green {
+      background-color: $color-green;
+    }
+    &_pink {
+      background-color: $color-pink;
+    }
+    &_yellow {
+      background-color: $color-yellow;
+    }
+
+    &-banner {
+      &-day {
+        font-size: 62px;
+        line-height: 60px;
+      }
+      &-month {
+        font-size: 19px;
+      }
+      &-title {
+        font-size: 23px;
+      }
+      &-text {
+        font-size: 16px;
+        color: $color-gray--1;
+      }
+    }
+
+
+  }
+}
+
+.card {
+  border: none;
+}
+
+
+@media screen and (min-width: $width-md) {
+  .news {
+    &__card {
+      transform-style: preserve-3d;
+      z-index: 5;
+      border-radius: 20px;
+      &:before {
+        content: "";
+        position: absolute;
+        inset: 8px;
+        transform: translate3d(0px, 0px, -1px);
+        background: linear-gradient(90deg, #F7941D 0%, #27AAE1 100%);
+        filter: blur(9px);
+      }
+    }
+  }
+}

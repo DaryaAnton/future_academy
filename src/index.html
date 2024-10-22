@@ -292,19 +292,27 @@
         <div class="row">
           <div class="col-12">
 
-            <div class="card">
+            <div class="card p-1 mb-2 position-relative news__card news__card_orange">
               <div class="card-body">
-                <div>25</div>
+                <div class="row news__card-banner-date">
+                  <div class="col-5 mb-4 fw-bold">
+                    <div class="news__card-banner-day">25</div>
+                    <div class="news__card-banner-month">ноября</div>
+                  </div>
+                  <div class="d-block col-7 d-md-none fw-medium news__card-banner-title mb-4">День открытых дверей </div>
+                </div>
                 <div class="news__cover">
-                  <div class="h6">День открытых дверей </div>
-                  <p>
+                  <div class="d-none fw-medium news__card-banner-title mb-4">День открытых дверей </div>
+                  <p class="col-12 news__card-banner-text mb-2">
                     Приглашаем всех желающих на бесплатную экскурсию
                     в мир востребованных профессий и полезных навыков
                   </p>
                 </div>
-                <button type="button" class="btn btn__news">
-                  Записаться
-                  <img src="" alt="">
+                <button class="news__card-banner-btn">
+                  <span>Записаться</span>
+                  <svg width="6" height="11">
+                    <use xlink:href="/icons/sprite.svg#btnArrow"></use>
+                  </svg>
                 </button>
               </div>
             </div>
@@ -315,7 +323,7 @@
         <div class="row">
 
           <div class="col-12 col-lg-5">
-            <div class="card">
+            <div class="card mb-2 mb-lg-0 position-relative news__card news__card_sky">
               <img src="" class="card-img-top" alt="">
               <div class="card-body">
                 <h5 class="card-title">Программы обучения</h5>
@@ -332,10 +340,10 @@
           </div>
 
           <div class="col-12 col-lg-7">
-            <div class="row">
+            <div class="row d-flex flex-column flex-md-row">
 
-              <div class="col col-lg-6">
-                <div class="card">
+              <div class="col-12 col-md-6 mb-2">
+                <div class="card position-relative news__card news__card_green">
                   <div class="card-body">
                     <div class="news__cover">
                       <img src="" alt="">
@@ -345,8 +353,8 @@
                 </div>
               </div>
 
-              <div class="col col-lg-6">
-                <div class="card">
+              <div class="col-12 mb-2 mb-md-0 col-md-6">
+                <div class="card position-relative news__card news__card_pink">
                   <div class="card-body">
                     <div class="news__cover">
                       <img src="" alt="">
@@ -358,8 +366,8 @@
             </div>
             <div class="row">
 
-              <div class="col-12">
-                <div class="card">
+              <div class="col-12 mb-2">
+                <div class="card position-relative news__card news__card_yellow">
                   <img src="" class="card-img-top" alt="">
                   <div class="card-body">
                     <h5 class="card-title">Попробуй!</h5>
@@ -745,7 +753,7 @@
     <!--owl-->
     <div class="owl">
       <div class="container">
-        <div class="card pt-md-4 pb-md-4 pe-lg-4 owl__card position-relative">
+        <div class="card pt-md-4 pb-md-4 pe-lg-4 owl__card position-relative border-0">
           <div class="row">
             <div class="col-md-12 col-lg-7">
 
