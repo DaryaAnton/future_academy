@@ -31,4 +31,8 @@
   padding: 17px 80px;
   font-size: 14px;
   font-weight: 500;
+  &_blue {
+    color: $color-blue--dark;
+    border: 2px solid $color-blue--dark;
+  }
 }
