@@ -54,7 +54,7 @@
   </symbol>
 
   <symbol id="btnArrow" viewBox="0 0 9 13" fill="none">
-    <path d="M1 0.996582L6.80762 6.56201L1 11.9655" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    <path d="M1 0.996582L6.80762 6.56201L1 11.9655" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
   </symbol>
 </svg>
 
