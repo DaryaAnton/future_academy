@@ -25,7 +25,7 @@
         font-size: 19px;
       }
       &-title {
-        font-size: 23px;
+        font-size: 22px;
       }
       &-text {
         font-size: 16px;
@@ -33,7 +33,14 @@
       }
     }
 
-
+    &-icon {
+      width: 77px;
+      height: 77px;
+    }
+    &-click {
+      width: 60px;
+      height: 60px;
+    }
   }
 }
 
