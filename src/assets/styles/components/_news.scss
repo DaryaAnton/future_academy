@@ -27,10 +27,6 @@
       &-title {
         font-size: 22px;
       }
-      &-text {
-        font-size: 16px;
-        color: $color-gray--1;
-      }
     }
 
     &-icon {
@@ -46,6 +42,7 @@
 
 .card {
   border: none;
+  flex-grow: 1;
 }
 
 
@@ -62,6 +59,26 @@
         transform: translate3d(0px, 0px, -1px);
         background: linear-gradient(90deg, #F7941D 0%, #27AAE1 100%);
         filter: blur(9px);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $width-lg) {
+  .news {
+    &__card {
+      &-click {
+        width: 98px;
+        height: 98px;
+      }
+      &-banner {
+        &-day {
+          font-size: 85px;
+          line-height: 80px;
+        }
+        &-month {
+          font-size: 26px;
+        }
       }
     }
   }
