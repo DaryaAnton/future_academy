@@ -1,4 +1,10 @@
 .owl {
+  //стиль для информационной совушки, не из футора
+  &__common {
+    max-width: 30%;
+  }
+
+  //
   &__img {
     position: absolute;
     top: 9%;
@@ -65,6 +71,20 @@
       top: 30px;
       left: -30px;
       border-top: 2px solid $color-orange;
+    }
+
+    &_appeal {
+      transform: rotate(-90deg) scaleY(-1);
+      top: 98%;
+      left: 50%;
+      &:before {
+        border-top: 2px solid $color-owl-border-center;
+        left: -36px;
+      }
+      &:after {
+        border-top: 2px solid $color-owl-border-center;
+        top: 29px;
+      }
     }
   }
 }
@@ -206,6 +226,10 @@
     }
     &__tail {
       top: 100px;
+      &_appeal {
+        top: 98%;
+        left: 50%;
+      }
     }
     &__speech {
       &-title {
