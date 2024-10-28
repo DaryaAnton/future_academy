@@ -180,7 +180,7 @@
 
   <main>
     <!--hero--secondary------------------------->
-    <section class="hero hero--secondary mb-10">
+    <section class="hero hero--secondary">
       <div class="hero__mobile-image d-md-none">
         <img src="/images/hero/girl.jpg" alt="girl with notebook" height="224">
       </div>
@@ -188,33 +188,140 @@
       <div class="container">
         <div class="row">
           <div class="col col-md-6 pt-2 pb-2 pt-md-4 pb-md-3 z-1 position-relative">
-            <h1 class="hero__title">Веб-разработчик</h1>
-            <p class="hero__text">Программа для тех кто...Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque quis tellus feugiat, posuere magna et, scelerisque leo. In scelerisque pulvinar sem, et
-              gravida mi tincidunt nec.</p>
-            <ul class="row row-cols-auto g-3 mb-4">
+            <h1 class="hero__title">Название мероприятия</h1>
+            <p class="hero__text">
+              Подпись к названию
+            </p>
+            <ul class="row g-3 mb-4">
               <li class="col">
-                <p class="hero__gradient-top">Срок обучения:</p>
-                <p>5 лет</p>
+                <p class="hero__gradient-top"></p>
+                <p>Узнайте самые востребованные профессии, на которые более 113 тысяч вакансий</p>
               </li>
 
               <li class="col">
-                <p class="hero__gradient-top">Режим занятий:</p>
-                <p>2 раза в неделю по 2 академических часа</p>
+                <p class="hero__gradient-top"></p>
+                <p>Выберите подходящую именно для вас</p>
+              </li>
+
+              <li class="col">
+                <p class="hero__gradient-top"></p>
+                <p>Сделайте первые шаги к возможности выйти на доход более 
+                  100 тысяч рублей</p>
               </li>
             </ul>
-            <p class="d-inline-block hero__price hero__gradient-top">от 4 350 ₽ в месяц</p>
-            <p class="hero__desc">1 занятие бесплатное</p>
-            <button type="button" class="btn btn__orange">Записаться на пробное занятие</button>
+
+            <p class="hero__desc">Запишись сейчас</p>
+            <button type="button" class="btn btn__orange">Записаться на интенсив</button>
           </div>
 
-          <div class="col col-md-6 d-none d-md-block hero__desktop-image"><img src="/images/course/boy.jpg" alt="">
+          <div class="col col-md-6 d-none d-md-block hero__desktop-image"><img src="/images/event/hero-event.jpg" alt="the guy with the tablet">
           </div>
         </div>
       </div>
     </section>
     <!--hero--secondary------------------------->
 
+    <!--appeal---------------------------------->
+    <section class="appeal pt-3 pb-4 pt-md-10 pb-md-10">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 mb-4 mb-md-0 appeal__owl">
+
+            <div class="owl__speech">
+              <p class="owl__speech-text fw-medium">
+                Текст, призывающий записаться
+                на мероприятие
+              </p>
+              <span class="owl__tail owl__tail_appeal"></span>
+            </div>
+
+              <img class="owl__common" src="/images/common/owl.svg" alt="owl">
+          </div>
+          <div class="col-12 col-md-8">
+            <ul class="d-lg-flex">
+              <li class="mb-4 mb-lg-0">
+                <img class="mb-2" src="/images/appeal/x.svg" alt="x">
+                <h6 class="mb-2 fw-bold fs-4">Заголовок</h6>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi elit, egestas ut feugiat id, laoreet volutpat risus. Cras condimentum, ligula eget
+                </p>
+              </li>
+
+              <li class="mb-4 mb-lg-0">
+                <img class="mb-2" src="/images/appeal/circle.svg" alt="circle">
+                <h6 class="mb-2 fw-bold fs-4">Заголовок</h6>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi elit, egestas ut feugiat id, laoreet volutpat risus. Cras condimentum, ligula eget
+                </p>
+              </li>
+
+              <li>
+                <img class="mb-2" src="/images/appeal/triangle.svg" alt="triangle">
+                <h6 class="mb-2 fw-bold fs-4">Заголовок</h6>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi elit, egestas ut feugiat id, laoreet volutpat risus. Cras condimentum, ligula eget
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/appeal--------------------------------->
+
+
+    <!--accordion------------------------------->
+    <section class="accordion mb-5 mb-lg-10">
+      <div class="container">
+        <h2>Программа мероприятия</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi elit, egestas ut feugiat id, laoreet volutpat risus. Cras condimentum, ligula eget varius eleifend, massa nibh imperdiet est, vel sagittis quam justo vestibulum eros. Cras dignissim mi quis fringilla feugiat. Proin malesuada luctus diam, vitae faucibus dolor venenatis vel. In hac habitasse platea dictumst. 
+        </p>
+
+        <div class="accordion__wrapper">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--/accordion------------------------------>
 
     <!--card-info------------------------------->
     <section class="card-info text-center">
