@@ -1,8 +1,50 @@
-// .accordion {
-//   &__wrapper {
-//     background-image: url('/images/accordion/accordion_bg.svg');
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     background-position: center;
-//   }
-// }
+.accordion-button::after {
+  background-image: $accordion-button-icon;
+}
+.accordion-button:not(.collapsed) {
+  background-color: $color-secondary;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: $accordion-button-active-icon;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-item {
+  border: none;
+}
+.gradient-shadow {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(247, 148, 29, 0.5) 0%, rgba(39, 170, 233, 0.5) 100%);
+    z-index: -1;
+    filter: blur(10px);
+  }
+}
+.accordion {
+  &__title {
+    font-size: 31px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: $width-md) {
+  .accordion {
+    &__title {
+      font-size: 36px;
+      line-height: 34px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 26px;
+      width: 92%;
+      text-wrap: balance;
+    }
+  }
+}
