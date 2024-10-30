@@ -83,7 +83,7 @@
                 </svg>Все курсы</a>
             </li>
             <li class="nav-item d-xl-none"><a href="#!">Об академии</a></li>
-            <li class="nav-item"><a href="./events/events.html">Мероприятия</a></li>
+            <li class="nav-item"><a href="/events/events.html">Мероприятия</a></li>
             <li class="nav-item d-xl-none"><a href="#!">Новости</a></li>
             <li class="nav-item"><a href="#!">Базы знаний</a></li>
             <li class="nav-item"><a href="#!">Карьера</a></li>
@@ -198,41 +198,118 @@
     <!--hero--primary--------------------------->
 
 
-    <!--hero--secondary------------------------->
-    <section class="hero hero--secondary mb-10">
-      <div class="hero__mobile-image d-md-none">
-        <img src="/images/hero/girl.jpg" alt="girl with notebook" height="224">
-      </div>
-
+    <!--tabs--------------------------->
+    <section class="tabs">
       <div class="container">
-        <div class="row">
-          <div class="col col-md-6 pt-2 pb-2 pt-md-4 pb-md-3 z-1 position-relative">
-            <h1 class="hero__title">Веб-разработчик</h1>
-            <p class="hero__text">Программа для тех кто...Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque quis tellus feugiat, posuere magna et, scelerisque leo. In scelerisque pulvinar sem, et
-              gravida mi tincidunt nec.</p>
-            <ul class="row row-cols-auto g-3 mb-4">
-              <li class="col">
-                <p class="hero__gradient-top">Срок обучения:</p>
-                <p>5 лет</p>
-              </li>
+        <div class="row mb-4 mb-lg-13">
+          <div class="col-12 col-lg-3 mb-4 mb-lg-0 appeal__owl">
 
-              <li class="col">
-                <p class="hero__gradient-top">Режим занятий:</p>
-                <p>2 раза в неделю по 2 академических часа</p>
-              </li>
-            </ul>
-            <p class="d-inline-block hero__price hero__gradient-top">от 4 350 ₽ в месяц</p>
-            <p class="hero__desc">1 занятие бесплатное</p>
-            <button type="button" class="btn btn__orange">Записаться на пробное занятие</button>
+            <div class="owl__speech">
+              <div class="owl__speech-title fs-lg-6 fw-semibold mb-2">Кем вы хотите стать?</div>
+              <p class="owl__speech-text fs-lg-6 fw-medium">
+                Пора найти себя
+                и выбрать подходящий курс :)
+                <br>
+              <div class="mt-2 owl__speech-text fs-lg-6 fw-medium">Удачи!</div>
+              </p>
+              <span class="owl__tail owl__tail_appeal"></span>
+            </div>
+
+            <img class="owl__common owl__common_tabs" src="/images/common/owl.svg" alt="owl">
           </div>
 
-          <div class="col col-md-6 d-none d-md-block hero__desktop-image"><img src="/images/course/boy.jpg" alt="">
+          <div class="col-12 col-lg-9">
+            <ul class="nav nav-underline mb-3 d-flex justify-content-between" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active d-flex align-items-center" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                  type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                  <div class="me-1">
+                    <img src="images/common/children.png" alt="children">
+                  </div>
+                  <div>
+                    <p class="tabs__name">Дети</p>
+                    <span class="tabs__age">8 — 14 лет</span>
+                  </div>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link d-flex align-items-center" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                  type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                  <div class="me-1">
+                    <img src="/images/common/teenagers.png" alt="teenagers">
+                  </div>
+                  <div>
+                    <p class="tabs__name">Подростки</p>
+                    <span class="tabs__age">14 — 18 лет</span>
+                  </div>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link d-flex align-items-center" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                  type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                  <div class="me-1">
+                    <img src="/images/common/family.png" alt="family">
+                  </div>
+                  <div>
+                    <p class="tabs__name">Взрослые</p>
+                    <span class="tabs__age">18 — ∞</span>
+                  </div>
+                </button>
+              </li>
+
+            </ul>
+            <div class="tab-content mt-2 mt-lg-4" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <div class="row">
+                  <div class="col-12 d-flex flex-wrap align-lg-items-center mb-lg-1">
+                    <a href="!#" class="tabs__btn">Робототехника</a>
+                    <a href="!#" class="tabs__btn">Создание игр</a>
+                    <a href="!#" class="tabs__btn">Web-разработка</a>
+                    <a href="!#" class="tabs__btn">Мультимедиа</a>
+                    <a href="!#" class="tabs__btn">Шахматы</a>
+                  </div>
+
+                  <div class="col-12 d-flex flex-wrap align-lg-items-center">
+                    <a href="!#" class="tabs__btn">3D-  и дизайн</a>
+                    <a href="!#" class="tabs__btn">Английский язык</a>
+                    <a href="!#" class="tabs__btn">Блогинг</a>
+                    <a href="!#" class="tabs__btn">Soft skills</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <div class="row">
+                  <div class="col-12 d-flex flex-wrap align-lg-items-center mb-lg-1">
+                    <a href="!#" class="tabs__btn">Робототехника</a>
+                    <a href="!#" class="tabs__btn">Создание игр</a>
+                    <a href="!#" class="tabs__btn">Web-разработка</a>
+                    <a href="!#" class="tabs__btn">Мультимедиа</a>
+                    <a href="!#" class="tabs__btn">Шахматы</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                <div class="row">
+                  <div class="col-12 d-flex flex-wrap align-lg-items-center">
+                    <a href="!#" class="tabs__btn">3D-  и дизайн</a>
+                    <a href="!#" class="tabs__btn">Английский язык</a>
+                    <a href="!#" class="tabs__btn">Блогинг</a>
+                    <a href="!#" class="tabs__btn">Soft skills</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
+
       </div>
     </section>
-    <!--hero--secondary------------------------->
+    <!--/tabs--------------------------->
 
 
     <!--video----------------------------------->
@@ -299,10 +376,12 @@
                     <div class="news__card-banner-day">25</div>
                     <div class="news__card-banner-month">ноября</div>
                   </div>
-                  <div class="d-block col-7 col-sm-9 col-md-10 d-lg-none fw-medium news__card-banner-title mb-4">День открытых дверей </div>
+                  <div class="d-block col-7 col-sm-9 col-md-10 d-lg-none fw-medium news__card-banner-title mb-4">День
+                    открытых дверей </div>
                 </div>
                 <div class="news__cover col-lg-7">
-                  <div class="d-none d-lg-block fw-medium news__card-banner-title mb-4 mb-lg-3">День открытых дверей </div>
+                  <div class="d-none d-lg-block fw-medium news__card-banner-title mb-4 mb-lg-3">День открытых дверей
+                  </div>
                   <p class="col-12 news__card-banner-text mb-2 mb-lg-0">
                     Приглашаем всех желающих на бесплатную экскурсию
                     в мир востребованных профессий и полезных навыков
@@ -325,10 +404,12 @@
         <div class="row">
 
           <div class="col-12 col-lg-5">
-            <div class="card p-2 pt-lg-2 pb-lg-4 ps-lg-1 pe-lg-1 mb-2 mb-lg-0 position-relative news__card news__card_sky">
+            <div
+              class="card p-2 pt-lg-2 pb-lg-4 ps-lg-1 pe-lg-1 mb-2 mb-lg-0 position-relative news__card news__card_sky">
               <div class="card-body d-flex flex-column justify-content-center align-items-center">
 
-                <img src="./images/news/news_monitor.svg" class="card-img-top news__card-icon mb-2 mb-lg-4" alt="monitor">
+                <img src="./images/news/news_monitor.svg" class="card-img-top news__card-icon mb-2 mb-lg-4"
+                  alt="monitor">
 
                 <h5 class="card-title mb-2 mb-lg-4">Программы обучения</h5>
                 <p class="card-text mb-2 mb-lg-5">
@@ -378,7 +459,8 @@
                   <div class="card-body p-2 p-lg-5 d-flex flex-column flex-lg-row">
 
                     <div class="col col-lg-4 d-flex align-items-center mb-2 mb-lg-0">
-                      <img src="./images/news/news_click.svg" class="card-img-top news__card-click col-6 me-2 me-lg-4" alt="click">
+                      <img src="./images/news/news_click.svg" class="card-img-top news__card-click col-6 me-2 me-lg-4"
+                        alt="click">
                       <h5 class="card-title d-block col-6 fs-4 d-lg-none">Попробуй!</h5>
                     </div>
 
@@ -598,7 +680,7 @@
       </div>
     </section>
     <!--/card-reviews--------------------------->
-    
+
 
     <!--privilege------------------------------->
     <section class="privilege pt-3 pb-3 pt-lg-8 pb-lg-15">
