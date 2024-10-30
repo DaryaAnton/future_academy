@@ -32,6 +32,30 @@
     font-size: 31px;
     line-height: 30px;
   }
+  &__btn {
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 500;
+  }
+
+  &__circle {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: -8%;
+  }
+  &__triangle {
+    position: absolute;
+    z-index: -1;
+    right: -5%;
+    top: 23%;
+  }
+  &__x {
+    position: absolute;
+    z-index: -1;
+    bottom: -12%;
+    right: -9%;
+  }
 }
 
 @media screen and (min-width: $width-md) {
