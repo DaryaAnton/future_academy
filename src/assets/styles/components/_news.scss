@@ -60,6 +60,9 @@
         background: linear-gradient(90deg, #F7941D 0%, #27AAE1 100%);
         filter: blur(9px);
       }
+      &:hover::before {
+        filter: blur(15px);
+      }
     }
   }
 }
