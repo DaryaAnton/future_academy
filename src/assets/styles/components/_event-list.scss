@@ -1,0 +1,10 @@
+.event-list {
+  &__bg {
+    background: url(../../../images/event/event-list__bg.svg) center center/cover no-repeat;
+  }
+}
+
+.card {
+  flex: 1;
+  // border: none;
+}
