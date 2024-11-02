@@ -5,6 +5,22 @@
   }
 
   //
+  &__card {
+    transform-style: preserve-3d;
+    z-index: 5;
+    background-color: $color-secondary;
+    border-radius: 20px;
+    margin-bottom: -40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 8px;
+      transform: translate3d(0px, 0px, -1px);
+      background: linear-gradient(90deg, $color-orange 0%, $color-blue 100%);
+      filter: blur(10px);
+    }
+  }
   &__img {
     position: absolute;
     top: 9%;
@@ -208,22 +224,22 @@
 
 @media screen and (min-width: $width-md) {
   .owl {
-    &__card {
-      transform-style: preserve-3d;
-      z-index: 5;
-      background-color: $color-secondary;
-      border-radius: 20px;
-      margin-bottom: -40px;
+    // &__card {
+    //   transform-style: preserve-3d;
+    //   z-index: 5;
+    //   background-color: $color-secondary;
+    //   border-radius: 20px;
+    //   margin-bottom: -40px;
   
-      &::before {
-        content: "";
-        position: absolute;
-        inset: 8px;
-        transform: translate3d(0px, 0px, -1px);
-        background: linear-gradient(90deg, $color-orange 0%, $color-blue 100%);
-        filter: blur(10px);
-      }
-    }
+    //   &::before {
+    //     content: "";
+    //     position: absolute;
+    //     inset: 8px;
+    //     transform: translate3d(0px, 0px, -1px);
+    //     background: linear-gradient(90deg, $color-orange 0%, $color-blue 100%);
+    //     filter: blur(10px);
+    //   }
+    // }
     &__tail {
       top: 100px;
       &_appeal {
