@@ -1,0 +1,2 @@
+import '@/assets/scripts/script';
+
