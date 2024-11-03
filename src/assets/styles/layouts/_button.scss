@@ -31,9 +31,19 @@
   padding: 17px 80px;
   font-size: 14px;
   font-weight: 500;
+  &:hover {
+    // background-color: $color-primary;
+    background-color: $color-gray--1;
+    border: 2px solid $color-gray--1;
+    color: $color-secondary; 
+  }
   &_blue {
     color: $color-blue--dark;
     border: 2px solid $color-blue--dark;
+    &:hover {
+      background-color: $color-blue--dark;
+      color: $color-secondary;
+    }
   }
 }
 
