@@ -28,10 +28,6 @@
   }
 }
 .accordion {
-  &__title {
-    font-size: 31px;
-    line-height: 30px;
-  }
   &__btn {
     font-size: 18px;
     line-height: 34px;
@@ -60,10 +56,6 @@
 
 @media screen and (min-width: $width-md) {
   .accordion {
-    &__title {
-      font-size: 36px;
-      line-height: 34px;
-    }
     &__text {
       font-size: 18px;
       line-height: 26px;

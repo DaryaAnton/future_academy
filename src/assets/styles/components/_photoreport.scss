@@ -1,14 +1,7 @@
-.photoreport {
-  &__title {
-    font-size: 24px;
-  }
-}
+
 
 @media screen and (min-width: $width-md) {
   .photoreport {
-    &__title {
-      font-size: 36px;
-    }
     &__subtitle {
     font-size: 18px;
     line-height: 26px;
