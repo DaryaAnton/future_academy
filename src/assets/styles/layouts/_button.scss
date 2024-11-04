@@ -21,6 +21,14 @@
       background-color: $color-orange--light;
     }
   }
+  &__news-list {
+    font-weight: 500;
+    color: $color-blue--dark;
+    padding: 0;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .news__card-banner-btn {
@@ -32,7 +40,6 @@
   font-size: 14px;
   font-weight: 500;
   &:hover {
-    // background-color: $color-primary;
     background-color: $color-gray--1;
     border: 2px solid $color-gray--1;
     color: $color-secondary; 
