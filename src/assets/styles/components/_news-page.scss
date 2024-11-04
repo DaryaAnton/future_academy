@@ -1,0 +1,30 @@
+.news-page {
+  &__date {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  &__img {
+    border-radius: 20px;
+    max-height: 435px;
+  }
+}
+
+@media screen and (min-width: $width-md) {
+  .news-page {
+    &__text {
+      font-size: 18px;
+      line-height: 26px;
+      width: 90%;
+      &_margin {
+        margin-top: -50px;
+      }
+    }
+    &__preview {
+      background-image: url('/images/video/bg.png');
+      background-repeat: no-repeat;
+      // background-size: contain;
+      background-size: auto;
+      background-position: center;
+    }
+  }
+}
