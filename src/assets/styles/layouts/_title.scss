@@ -1,0 +1,9 @@
+.title {
+  font-size: 22px;
+}
+
+@media screen and (min-width: $width-lg) {
+  .title {
+    font-size: 36px;
+  }
+}
