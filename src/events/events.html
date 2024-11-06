@@ -183,7 +183,9 @@
     <section class="event-list pt-2 pb-5 pb-lg-10">
       <div class="container">
         <!--breadcrumb-->
-        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='14'%3E%3Cpath d='M9.506 10.85C9.646 10.5513 9.78133 10.29 9.912 10.066C10.052 9.842 10.1873 9.65533 10.318 9.506H2.156V8.918H10.318C10.1873 8.75933 10.052 8.568 9.912 8.344C9.78133 8.12 9.646 7.86333 9.506 7.574H9.996C10.584 8.25533 11.2 8.75933 11.844 9.086V9.338C11.2 9.65533 10.584 10.1593 9.996 10.85H9.506Z' fill='%23828282'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <nav
+          style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='14'%3E%3Cpath d='M9.506 10.85C9.646 10.5513 9.78133 10.29 9.912 10.066C10.052 9.842 10.1873 9.65533 10.318 9.506H2.156V8.918H10.318C10.1873 8.75933 10.052 8.568 9.912 8.344C9.78133 8.12 9.646 7.86333 9.506 7.574H9.996C10.584 8.25533 11.2 8.75933 11.844 9.086V9.338C11.2 9.65533 10.584 10.1593 9.996 10.85H9.506Z' fill='%23828282'/%3E%3C/svg%3E&#34;);"
+          aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/index.html">Главная</a></li>
             <li class="breadcrumb-item active" aria-current="page">Мероприятия</li>
@@ -194,6 +196,92 @@
         <h1 class="title fw-bold mb-2 mb-lg-4">Все мероприятия</h1>
 
         <div class="event-list__wrapper">
+
+          <!--modal-->
+          <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+
+                  <div class="owl">
+                    <div class="container">
+                      <div class="card pt-2 pt-md-4 pb-md-4 pe-lg-4 owl__card position-relative border-0">
+                        <div class="row">
+                          <div class="col-md-12 col-lg-7">
+
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="owl__message">
+                                  <img class="owl__img img-fluid" src="/images/common/owl.svg" alt="owl">
+                                </div>
+                              </div>
+
+                              <div class="mb-5 col-8 offset-4 mb-lg-0">
+                                <div class="d-flex justify-content-center align-items-center">
+                                  <div class="owl__speech">
+                                    <span class="owl__tail"></span>
+                                    <h6 class="owl__speech-title mb-1 fw-semibold">Помочь с выбором?</h6>
+                                    <p class="owl__speech-text fw-medium">
+                                      Оставьте заявку и наши специалисты свяжутся с вами, ответят на все вопросы
+                                      и подберут подходящий вариант обучения.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12 col-lg-5">
+                            <div class="card-body">
+
+                              <form class="form ps-1 pe-1 ps-lg-0 pe-lg-0">
+                                <div class="form-group">
+                                  <input type="text" class="form-control col-12 mb-2 form__input"
+                                    placeholder="Ваше имя">
+                                </div>
+                                <div class="form-group justify-content-between">
+                                  <div class="row">
+                                    <div class="col-6 mb-2">
+                                      <input type="text" class="form-control col-12 form__input"
+                                        placeholder="Ваш телефон">
+                                    </div>
+                                    <div class="col-6">
+                                      <input type="email" class="form-control col-12 form__input"
+                                        placeholder="Ваш e-mail">
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <div class="row mb-4 mb-md-0">
+                                    <div class="col-6">
+                                      <p class="m-0 form__text">
+                                        Нажимая на кнопку, я соглашаюсь
+                                        на обработку персональных
+                                        и с правилами по льзования Платформой
+                                      </p>
+                                    </div>
+
+                                    <div class="col-6">
+                                      <button type="submit" class="btn btn__orange col-12 w-100">Кнопка</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/modal-->
 
           <div class="card mb-2 position-relative event-list__bg_orange pb-3 pt-2 ps-2 pe-2">
             <div class="card-body d-flex flex-column justify-content-start flex-lg-row align-items-lg-center">
@@ -214,7 +302,7 @@
                 </p>
               </div>
               <div class="d-flex flex-column justify-content-center align-items-start col-lg-3">
-                <button class="news__card-banner-btn d-lg-flex flex-lg-nowrap align-items-lg-center">
+                <button class="news__card-banner-btn d-lg-flex flex-lg-nowrap align-items-lg-center" data-bs-toggle="modal" data-bs-target="#eventModal">
                   <span class="me-lg-1">Записаться</span>
                   <svg width="6" height="11">
                     <use xlink:href="/icons/sprite.svg#btnArrow"></use>
@@ -227,7 +315,8 @@
           <div class="row mb-md-2">
 
             <div class="col-12 col-md-4 d-flex flex-column">
-              <a href="/event-page/event-page.html" class="card mb-2 mb-md-0 pb-3 pt-2 ps-2 pe-2 event-list__bg_blue-light">
+              <a href="/event-page/event-page.html"
+                class="card mb-2 mb-md-0 pb-3 pt-2 ps-2 pe-2 event-list__bg_blue-light">
                 <div class="card-body">
                   <p class="event-list__tag">Встреча</p>
 
@@ -235,9 +324,10 @@
                     <img class="me-2" src="/images/event-list/phone.svg" alt="phone">
                     <h5 class="card-title">Заголовок мероприятия</h5>
                   </div>
-                  
+
                   <p class="card-text event-list__tag">
-                    Краткий анонс мероприятия в нескольких предложениях. Текст, который будет заинтересовывать пользователя
+                    Краткий анонс мероприятия в нескольких предложениях. Текст, который будет заинтересовывать
+                    пользователя
                   </p>
                   <p class="event-list__date">16 ноября 2021</p>
                 </div>
@@ -253,9 +343,10 @@
                     <img class="me-2" src="/images/event-list/phone.svg" alt="phone">
                     <h5 class="card-title">Заголовок мероприятия</h5>
                   </div>
-                  
+
                   <p class="card-text event-list__tag">
-                    Краткий анонс мероприятия в нескольких предложениях. Текст, который будет заинтересовывать пользователя
+                    Краткий анонс мероприятия в нескольких предложениях. Текст, который будет заинтересовывать
+                    пользователя
                   </p>
                   <p class="event-list__date">16 ноября 2021</p>
                 </div>
@@ -271,9 +362,10 @@
                     <img class="me-2" src="/images/event-list/phone.svg" alt="phone">
                     <h5 class="card-title">Заголовок мероприятия</h5>
                   </div>
-                  
+
                   <p class="card-text event-list__tag">
-                    Краткий анонс мероприятия в нескольких предложениях. Текст, который будет заинтересовывать пользователя
+                    Краткий анонс мероприятия в нескольких предложениях. Текст, который будет заинтересовывать
+                    пользователя
                   </p>
                   <p class="event-list__date">16 ноября 2021</p>
                 </div>
@@ -286,16 +378,18 @@
               <a href="/event-page/event-page.html" class="card mb-2 mb-md-0 event-list__bg_green">
                 <div class="row g-0 h-100">
                   <div class="col-md-4">
-                    <img src="/images/event/hero-event.jpg" class="img-fluid rounded-start object-fit-cover h-100" alt="the guy with the headphones">
+                    <img src="/images/event/hero-event.jpg" class="img-fluid rounded-start object-fit-cover h-100"
+                      alt="the guy with the headphones">
                   </div>
                   <div class="col-md-8">
                     <div class="card-body pb-3 pt-2 ps-2 pe-2">
                       <p class="event-list__tag">Встреча</p>
-    
+
                       <h5 class="card-title mb-2">Заголовок мероприятия</h5>
 
                       <p class="card-text event-list__tag">
-                        Краткий анонс мероприятия в нескольких предложениях. Текст, который будет заинтересовывать пользователя
+                        Краткий анонс мероприятия в нескольких предложениях. Текст, который будет заинтересовывать
+                        пользователя
                       </p>
                       <p class="event-list__date">16 ноября 2021</p>
                     </div>
@@ -310,7 +404,8 @@
                   <h5 class="card-title text-white mb-2">Заголовок мероприятия</h5>
 
                   <p class="card-text event-list__tag text-white">
-                    Краткий анонс мероприятия в нескольких предложениях. Текст, который будет заинтересовывать пользователя
+                    Краткий анонс мероприятия в нескольких предложениях. Текст, который будет заинтересовывать
+                    пользователя
                   </p>
                   <p class="event-list__date text-white">16 ноября 2021</p>
                 </div>
@@ -328,9 +423,10 @@
                     <img class="me-2" src="/images/event-list/phone.svg" alt="phone">
                     <h5 class="card-title">Заголовок мероприятия</h5>
                   </div>
-                  
+
                   <p class="card-text event-list__tag">
-                    Краткий анонс мероприятия в нескольких предложениях. Текст, который будет заинтересовывать пользователя
+                    Краткий анонс мероприятия в нескольких предложениях. Текст, который будет заинтересовывать
+                    пользователя
                   </p>
                   <p class="event-list__date">16 ноября 2021</p>
                 </div>
@@ -345,16 +441,18 @@
                     <img class="me-2" src="/images/event-list/phone.svg" alt="phone">
                     <h5 class="card-title">Заголовок мероприятия</h5>
                   </div>
-                  
+
                   <p class="card-text event-list__tag">
-                    Краткий анонс мероприятия в нескольких предложениях. Текст, который будет заинтересовывать пользователя
+                    Краткий анонс мероприятия в нескольких предложениях. Текст, который будет заинтересовывать
+                    пользователя
                   </p>
                   <p class="event-list__date">16 ноября 2021</p>
                 </div>
               </a>
             </div>
             <div class="col-12 col-md-4 d-flex flex-column">
-              <a href="/event-page/event-page.html" class="card mb-2 mb-md-0 pb-3 pt-2 ps-2 pe-2 event-list__bg_orange-lighter">
+              <a href="/event-page/event-page.html"
+                class="card mb-2 mb-md-0 pb-3 pt-2 ps-2 pe-2 event-list__bg_orange-lighter">
                 <div class="card-body">
                   <p class="event-list__tag">Встреча</p>
 
@@ -362,9 +460,10 @@
                     <img class="me-2" src="/images/event-list/phone.svg" alt="phone">
                     <h5 class="card-title">Заголовок мероприятия</h5>
                   </div>
-                  
+
                   <p class="card-text event-list__tag">
-                    Краткий анонс мероприятия в нескольких предложениях. Текст, который будет заинтересовывать пользователя
+                    Краткий анонс мероприятия в нескольких предложениях. Текст, который будет заинтересовывать
+                    пользователя
                   </p>
                   <p class="event-list__date">16 ноября 2021</p>
                 </div>

@@ -179,6 +179,89 @@
   </header>
 
   <main>
+
+    <!--modal-->
+    <div class="modal fade" id="eventPageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+
+            <div class="owl">
+              <div class="container">
+                <div class="card pt-2 pt-md-4 pb-md-4 pe-lg-4 owl__card position-relative border-0">
+                  <div class="row">
+                    <div class="col-md-12 col-lg-7">
+
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="owl__message">
+                            <img class="owl__img img-fluid" src="/images/common/owl.svg" alt="owl">
+                          </div>
+                        </div>
+
+                        <div class="mb-5 col-8 offset-4 mb-lg-0">
+                          <div class="d-flex justify-content-center align-items-center">
+                            <div class="owl__speech">
+                              <span class="owl__tail"></span>
+                              <h6 class="owl__speech-title mb-1 fw-semibold">Помочь с выбором?</h6>
+                              <p class="owl__speech-text fw-medium">
+                                Оставьте заявку и наши специалисты свяжутся с вами, ответят на все вопросы
+                                и подберут подходящий вариант обучения.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-5">
+                      <div class="card-body">
+
+                        <form class="form ps-1 pe-1 ps-lg-0 pe-lg-0">
+                          <div class="form-group">
+                            <input type="text" class="form-control col-12 mb-2 form__input" placeholder="Ваше имя">
+                          </div>
+                          <div class="form-group justify-content-between">
+                            <div class="row">
+                              <div class="col-6 mb-2">
+                                <input type="text" class="form-control col-12 form__input" placeholder="Ваш телефон">
+                              </div>
+                              <div class="col-6">
+                                <input type="email" class="form-control col-12 form__input" placeholder="Ваш e-mail">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <div class="row mb-4 mb-md-0">
+                              <div class="col-6">
+                                <p class="m-0 form__text">
+                                  Нажимая на кнопку, я соглашаюсь
+                                  на обработку персональных
+                                  и с правилами по льзования Платформой
+                                </p>
+                              </div>
+
+                              <div class="col-6">
+                                <button type="submit" class="btn btn__orange col-12 w-100">Кнопка</button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/modal-->
+
     <!--hero--secondary------------------------->
     <section class="hero hero--secondary">
       <div class="hero__mobile-image d-md-none">
@@ -211,7 +294,8 @@
             </ul>
 
             <p class="hero__desc">Запишись сейчас</p>
-            <button type="button" class="btn btn__orange">Записаться на интенсив</button>
+            <button type="button" class="btn btn__orange" data-bs-toggle="modal"
+              data-bs-target="#eventPageModal">Записаться на интенсив</button>
           </div>
 
           <div class="col col-md-6 d-none d-md-block hero__desktop-image"><img src="/images/event/hero-event.jpg"
@@ -470,7 +554,9 @@
           <div class="col-12">
             <h3 class="fw-bold text-center mb-2 title">Фотографии с прошлых мероприятий</h3>
             <p class="photoreport__subtitle mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi elit, egestas ut feugiat id, laoreet volutpat risus. Cras condimentum, ligula eget varius eleifend, massa nibh imperdiet est, vel sagittis quam justo.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi elit, egestas ut feugiat id, laoreet
+              volutpat risus. Cras condimentum, ligula eget varius eleifend, massa nibh imperdiet est, vel sagittis quam
+              justo.
             </p>
           </div>
         </div>
@@ -508,7 +594,7 @@
               <li class="splide__slide rounded">
                 <img class="h-100 w-100" src="/images/photoreport/slide_4.jpg" alt="slide">
               </li>
-              
+
 
             </ul>
           </div>
