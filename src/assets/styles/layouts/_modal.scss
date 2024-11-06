@@ -1,0 +1,13 @@
+$body-bg: transparent;
+
+.modal {
+
+  --bs-modal-width: auto;
+  --bs-modal-bg: $body-bg;
+  --bs-modal-border-color: none;
+
+  top: 20%;
+}
+.modal-backdrop {
+  background-color: $color-blue--dark;
+}
