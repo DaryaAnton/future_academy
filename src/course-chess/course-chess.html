@@ -77,7 +77,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav align-items-xl-center gap-xl-4 me-xl-auto">
             <li class="nav-item">
-              <a href="#!">
+              <a href="/courses/courses.html">
                 <svg width="20" height="16">
                   <use xlink:href="/icons/sprite.svg#categories"></use>
                 </svg>Все курсы</a>
@@ -180,7 +180,187 @@
 
   <main>
 
+    <!--modal-->
+    <div class="modal fade" id="chessModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
 
+            <div class="owl">
+              <div class="container">
+                <div class="card pt-2 pt-md-4 pb-md-4 pe-lg-4 owl__card position-relative border-0">
+                  <div class="row">
+                    <div class="col-md-12 col-lg-7">
+
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="owl__message">
+                            <img class="owl__img img-fluid" src="/images/common/owl.svg" alt="owl">
+                          </div>
+                        </div>
+
+                        <div class="mb-5 col-8 offset-4 mb-lg-0">
+                          <div class="d-flex justify-content-center align-items-center">
+                            <div class="owl__speech">
+                              <span class="owl__tail"></span>
+                              <h6 class="owl__speech-title mb-1 fw-semibold">Помочь с выбором?</h6>
+                              <p class="owl__speech-text fw-medium">
+                                Оставьте заявку и наши специалисты свяжутся с вами, ответят на все вопросы
+                                и подберут подходящий вариант обучения.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-5">
+                      <div class="card-body">
+
+                        <form class="form ps-1 pe-1 ps-lg-0 pe-lg-0">
+                          <div class="form-group">
+                            <input type="text" class="form-control col-12 mb-2 form__input" placeholder="Ваше имя">
+                          </div>
+                          <div class="form-group justify-content-between">
+                            <div class="row">
+                              <div class="col-6 mb-2">
+                                <input type="text" class="form-control col-12 form__input" placeholder="Ваш телефон">
+                              </div>
+                              <div class="col-6">
+                                <input type="email" class="form-control col-12 form__input" placeholder="Ваш e-mail">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <div class="row mb-4 mb-md-0">
+                              <div class="col-6">
+                                <p class="m-0 form__text">
+                                  Нажимая на кнопку, я соглашаюсь
+                                  на обработку персональных
+                                  и с правилами по льзования Платформой
+                                </p>
+                              </div>
+
+                              <div class="col-6">
+                                <button type="submit" class="btn btn__orange col-12 w-100">Кнопка</button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/modal-->
+
+    <!--hero--secondary------------------------->
+    <section class="hero hero--secondary hero--secondary_chess">
+      <div class="hero__mobile-image d-md-none">
+        <img src="/images/hero/girl.jpg" alt="girl with notebook" height="224">
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-6 pt-2 pb-2 pt-md-4 pb-md-3 z-1 position-relative">
+            <h1 class="hero__title">Шахматная школа</h1>
+            <p class="hero__text">
+              Развитие мышления и логики
+            </p>
+            <ul class="row g-3 mb-4">
+              <li class="col">
+                <p class="hero__gradient-top">Срок обучения:</p>
+                <p>5 лет</p>
+              </li>
+
+              <li class="col">
+                <p class="hero__gradient-top">Режим занятий:</p>
+                <p>2 раза в неделю по 2 академических часа</p>
+              </li>
+
+            </ul>
+
+            <p class="d-inline-block hero__price hero__gradient-top">от 4 350 ₽ в месяц</p>
+            <p class="hero__desc">1 занятие бесплатное</p>
+            <p class="mb-2">
+              Прежде чем начать
+              обучение советуем записаться на пробное заниятие
+            </p>
+            <button type="button" class="btn btn__orange" data-bs-toggle="modal" data-bs-target="#chessModal">Записаться
+              на пробное занятие</button>
+          </div>
+
+          <div class="col col-md-6 d-none d-md-block hero__desktop-image"><img src="/images/event/hero-chess.jpg"
+              alt="the guy with the tablet">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--hero--secondary------------------------->
+
+    <!--appeal---------------------------------->
+    <section class="appeal pt-3 pb-4 pt-md-10 pb-md-10">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 mb-4 mb-md-0 appeal__owl">
+
+            <div class="owl__speech">
+              <p class="owl__speech-text fw-medium">
+                Вы полюбите шахматы, и вам этого будет не хватать всегда!
+              </p>
+              <span class="owl__tail owl__tail_appeal"></span>
+            </div>
+
+            <img class="owl__common" src="/images/common/owl.svg" alt="owl">
+          </div>
+
+          <div class="col-12 col-md-8">
+            <ul class="d-lg-flex">
+              <li class="mb-4 mb-lg-0 col-12 col-lg-3 me-1">
+                <img class="mb-2" src="/images/appeal-chess/elephant.svg" alt="elephant">
+                <h6 class="mb-2 fw-bold fs-4">Цель 1</h6>
+                <p>
+                  Привить любовь и интерес к шахматам
+                </p>
+              </li>
+
+              <li class="mb-4 mb-lg-0 col-12 col-lg-3 me-1">
+                <img class="mb-2" src="/images/appeal-chess/queen.svg" alt="queen">
+                <h6 class="mb-2 fw-bold fs-4">Цель 2</h6>
+                <p class="text-wrap">
+                  Получить удовольствие от процесса игры, от факта победы в партии, от спасения
+                </p>
+              </li>
+
+              <li class="mb-4 mb-lg-0 col-12 col-lg-3 me-1">
+                <img class="mb-2" src="/images/appeal-chess/rook.svg" alt="rook">
+                <h6 class="mb-2 fw-bold fs-4">Цель 3</h6>
+                <p>
+                  Научить анализировать свои и чужие ошибки, учиться на них с помощью GM мирового уровня
+                </p>
+              </li>
+
+              <li class="col-12 col-lg-3">
+                <img class="mb-2" src="/images/appeal-chess/horse.svg" alt="horse">
+                <h6 class="mb-2 fw-bold fs-4">Цель 4</h6>
+                <p>
+                  Получить удовольствие от процесса игры, от факта победы в партии, от спасения
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/appeal--------------------------------->
   </main>
 
 
