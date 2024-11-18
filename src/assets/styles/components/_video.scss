@@ -17,6 +17,9 @@
     background: $color-blue--dark;
     opacity: 0.6;
     border-radius: var(--bs-border-radius);
+    &_chess {
+      border-radius: 20px;
+    }
   }
 
   &__player {
