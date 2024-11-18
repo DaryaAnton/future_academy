@@ -1,0 +1,12 @@
+.info-course__text {
+  text-wrap: balance;
+  line-height: 26px;
+}
+.info-course__item {
+  width: 31%;
+}
+@media screen and (min-width: $width-md) {
+  .info-course__text {
+    font-size: 18px;
+  }
+}
