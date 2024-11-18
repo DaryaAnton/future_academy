@@ -2,6 +2,9 @@
   //стиль для информационной совушки, не из футора
   &__common {
     max-width: 30%;
+    &_revers {
+      max-width: 85%
+    }
   }
 
   //
@@ -47,6 +50,14 @@
       z-index: -2;
     }
 
+    &_revers {
+      position: absolute;
+      top: 60%;
+      right: 17%;
+      width: 25%;
+      text-align: center;
+    }
+
     &-title {
       font-size: 18px;
     }
@@ -65,7 +76,7 @@
     top: 80px;
     left: -29px;
     z-index: -1;
-    border-bottom: 30px solid #fff;
+    border-bottom: 31px solid #fff;
     border-left: 30px solid transparent;
 
     &:before {
@@ -102,6 +113,12 @@
         top: 29px;
       }
     }
+  }
+
+  &__fly-chess {
+    position: absolute;
+    top: 10%;
+    right: 0;
   }
 }
 
@@ -245,6 +262,17 @@
       &_appeal {
         top: 98%;
         left: 50%;
+      }
+      &_course {
+        top: 98%;
+        left: 77%;
+        transform: rotate(271deg);
+        &::after {
+          border-top: 2px solid #3ca8cd;
+        }
+        &::before {
+          border-top: 2px solid #57a5b4;
+        }
       }
     }
     &__speech {
