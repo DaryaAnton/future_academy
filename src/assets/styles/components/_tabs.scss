@@ -9,6 +9,7 @@
 
     position: relative;
     transition: box-shadow 0.3s ease;
+
     &:after {
       content: '';
       position: absolute;
@@ -24,22 +25,91 @@
       filter: blur(4px);
       opacity: 0.4;
     }
+
     &:hover::after {
       filter: blur(10px);
       opacity: .82
     }
   }
+
   &__name {
     font-weight: 700;
     text-decoration: none;
     color: $color-primary;
   }
+
   &__age {
     color: $color-gray--2;
     font-size: 12px;
     text-decoration: none;
   }
-  
+
+  &-filter {
+    &__label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      & input {
+        display: none;
+      }
+
+      & span {
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 20px;
+          height: 20px;
+          border: 2px solid $color-gray--1;
+          border-radius: 50%;
+          background: transparent;
+          transition: border-color 0.8s;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translate(10%, -50%);
+          width: 17px;
+          height: 17px;
+          border-radius: 50%;
+          background-color: white;
+          background-position: 50% 50%;
+          background-size: 10px 11px;
+          background-repeat: no-repeat;
+          background-image: url('/images/common/dot.png');
+          opacity: 0;
+          transition: opacity 0.8s;
+        }
+      }
+    }
+  }
+}
+
+.tabs-filter__label input:checked + span::after {
+  opacity: 1;
+}
+.tabs-filter__label input:checked+span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(90deg, $color-orange 0%, $color-blue 100%);
+  transition: opacity 0.8s;
 }
 
 .nav-underline {
@@ -47,11 +117,11 @@
     position: relative;
     padding-bottom: 10px;
     border-bottom: none;
-    
+
     &.active {
       color: #fff;
       font-weight: normal;
-      
+
       &::after {
         content: '';
         position: absolute;
@@ -74,6 +144,7 @@
       padding: 15px 20px;
       margin-right: 20px;
     }
+
     &__name {
       font-size: 16px;
     }
