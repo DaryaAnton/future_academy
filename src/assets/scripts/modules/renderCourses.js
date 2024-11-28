@@ -45,7 +45,7 @@ export const renderCourses = (courses, activeAge) => {
 
     const courseElement = `
       <a href="${course.link}" data-catName="${course.categoryId}"
-        class="card mb-2 me-1 pb-3 pt-2 ps-2 pe-2 ${bgClass}" style="flex: 1 0 48%; max-width: 48%;">
+        class="card mb-2 me-1 pb-3 pt-2 ps-2 pe-2 ${bgClass}" style="flex: 1 0 48%; max-width: 100%;">
         <div class="card-body">
           <p class="event-list__tag">${course.tag}</p>
 
