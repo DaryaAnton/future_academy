@@ -5,13 +5,14 @@ import { getData } from '../../assets/scripts/modules/getData';
 import { renderCourses } from '../../assets/scripts/modules/renderCourses';
 import { filterCourses, monthFilters } from '../../assets/scripts/modules/filterCourses';
 import { errorTabs } from '../../assets/scripts/modules/error';
+import { accordeonTabs } from '../../assets/scripts/modules/accordeonTabs';
 
 getData('/courses.json').then((data) => {
   let courses = data;
   let activeAge = 'kids';
   let filteredCourses = filterCourses(courses, activeAge);
   let currentCatId = null;
-  const reset = document.getElementById('reset')
+  const resetBtn = document.querySelectorAll('.tabs__btn.reset');
 
   renderCourses(filteredCourses, activeAge);
 
@@ -79,13 +80,28 @@ getData('/courses.json').then((data) => {
   document.getElementById('months-value').innerText = `${initialDuration} ${monthFilters(initialDuration)}`;
 
   //reset
-  reset.addEventListener('click', () => {
+  resetBtn.forEach(reset => {
+    reset.addEventListener('click', () => {
+      currentCatId = null;
+      filteredCourses = filterCourses(courses, activeAge);
+      renderCourses(filteredCourses, activeAge);
 
-    currentCatId = null;
-    filteredCourses = filterCourses(courses, activeAge);
-    renderCourses(filteredCourses, activeAge);
+      levelRadios.forEach(radio => {
+        radio.checked = false;
+      });
+
+      typeRadios.forEach(radio => {
+        radio.checked = false;
+      });
+        
+      durationSlider.value = 24;
+      const initialDuration = durationSlider.value;
+      document.getElementById('months-value').innerText = `${initialDuration} ${monthFilters(initialDuration)}`;
+    });
   })
 }).catch(error => {
       console.error('Ошибка при загрузке курсов:', error);
       errorTabs()
   });
+
+  accordeonTabs()
