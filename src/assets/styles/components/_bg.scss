@@ -1,0 +1,33 @@
+.bg {
+  
+  &_blue-light {
+    background-color: $color-blue--light;
+  }
+  &_yellow {
+    background-color: $color-yellow;
+  }
+  &_sky {
+    background-color: $color-sky;
+  }
+  &_green {
+    background-color: $color-green;
+  }
+  &_purple {
+    background-color: $color-purple;
+  }
+  &_pink {
+    background-color: $color-pink;
+  }
+  &_orange-lighter {
+    background-color: $color-orange--lighter;
+  }
+  &_orange {
+    background-color: $color-orange;
+  }
+  &_yellow-soft {
+    background-color: $color-yellow--soft;
+  }
+  &_img-event {
+    background: url(../../../images/event/event-list__bg.svg) center center/cover no-repeat;
+  }
+}
