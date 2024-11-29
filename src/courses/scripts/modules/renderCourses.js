@@ -15,15 +15,15 @@ export const renderCourses = (courses, activeAge) => {
   
 
   const backgroundClasses = [
-    'event-list__bg_blue-light',
-    'event-list__bg_orange-lighter',
-    'event-list__bg_yellow',
-    'event-list__bg_green',
-    'event-list__bg_purple',
-    'event-list__bg_sky',
-    'event-list__bg_yellow-soft',
-    'event-list__bg_pink',
-    'event-list__bg_orange'
+    'bg_blue-light',
+    'bg_orange-lighter',
+    'bg_yellow',
+    'bg_green',
+    'bg_purple',
+    'bg_sky',
+    'bg_yellow-soft',
+    'bg_pink',
+    'bg_orange'
   ];
   
   if (renderCard.length === 0) {
