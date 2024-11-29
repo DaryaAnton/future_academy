@@ -1,7 +1,4 @@
 .event-list {
-  &__bg {
-    background: url(../../../images/event/event-list__bg.svg) center center/cover no-repeat;
-  }
   &__tag {
     color: $color-gray--4;
     font-size: 12px;
@@ -11,33 +8,7 @@
   &__date {
     font-size: 12px;
   }
-  &__bg_blue-light {
-    background-color: $color-blue--light;
-  }
-  &__bg_yellow {
-    background-color: $color-yellow;
-  }
-  &__bg_sky {
-    background-color: $color-sky;
-  }
-  &__bg_green {
-    background-color: $color-green;
-  }
-  &__bg_purple {
-    background-color: $color-purple;
-  }
-  &__bg_pink {
-    background-color: $color-pink;
-  }
-  &__bg_orange-lighter {
-    background-color: $color-orange--lighter;
-  }
-  &__bg_orange {
-    background-color: $color-orange;
-  }
-  &__bg_yellow-soft {
-    background-color: $color-yellow--soft;
-  }
+  
   &__number {
     font-size: 62px;
     line-height: 60px;
