@@ -1,0 +1,24 @@
+.founder {
+  &__img {
+    border-radius: 20px;
+  }
+  &__name {
+    font-size: 18px;
+    margin-top: 24px;
+  }
+  &__signature {
+    color: $color-gray--2;
+    margin-top: 12px;
+  }
+}
+
+@media(min-width: $width-md) {
+  .founder {
+    &__name {
+      font-size: 16px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+}
