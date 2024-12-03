@@ -42,6 +42,9 @@
     color: $color-blue--dark;
     font-size: 18px;
   }
+  &_partners {
+    height: 120px;
+  }
 }
 
 @media screen and (min-width: $width-lg) {
