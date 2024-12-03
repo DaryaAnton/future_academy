@@ -32,6 +32,9 @@
 @media(min-width: $width-md) {
   .counting {
     margin-top: -45px;
+    &_about {
+      margin-top: 0;
+    }
 
     &__title {
       font-size: 24px;
