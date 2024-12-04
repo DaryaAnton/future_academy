@@ -2,41 +2,61 @@ import '@/assets/scripts/script';
 import 'bootstrap/js/src/tab'
 
 import { getData } from '../../assets/scripts/modules/getData';
-import { renderCourses } from '../../assets/scripts/modules/renderCourses';
-import { filterCourses, monthFilters } from '../../assets/scripts/modules/filterCourses';
+import { renderCourses } from './modules/renderCourses';
+import { filterCourses, monthFilters, monthFiltersWithPreposition } from './modules/filters';
 import { errorTabs } from '../../assets/scripts/modules/error';
-import { accordeonTabs } from '../../assets/scripts/modules/accordeonTabs';
+import { accordeonTabs } from './modules/accordeonTabs';
 
 getData('/courses.json').then((data) => {
+
   let courses = data;
   let activeAge = 'kids';
   let filteredCourses = filterCourses(courses, activeAge);
   let currentCatId = null;
   const resetBtn = document.querySelectorAll('.tabs__btn.reset');
+  const tabButtons = document.querySelectorAll('.nav-link');
 
-  renderCourses(filteredCourses, activeAge);
+  const filterButtons = document.querySelectorAll('.tabs__btn');
+
+  const levelRadios = document.querySelectorAll('input[name="level"]');
+  const typeRadios = document.querySelectorAll('input[name="type"]');
+  const durationSlider = document.getElementById('months-slider');
+
 
   // Обработчики для табов
-  document.querySelector('#pills-home-tab').addEventListener('click', () => {
-    activeAge = 'kids';
+  const tabClickAge = (age) => {
+    activeAge = age;
     filteredCourses = filterCourses(courses, activeAge);
     renderCourses(filteredCourses, activeAge);
-  });
 
-  document.querySelector('#pills-profile-tab').addEventListener('click', () => {
-    activeAge = 'teenagers';
-    filteredCourses = filterCourses(courses, activeAge);
-    renderCourses(filteredCourses, activeAge);
-  });
+    levelRadios.forEach(radio => {
+      radio.checked = false;
+    });
+  
+    typeRadios.forEach(radio => {
+      radio.checked = false;
+    });
 
-  document.querySelector('#pills-contact-tab').addEventListener('click', () => {
-    activeAge = 'adult';
-    filteredCourses = filterCourses(courses, activeAge);
-    renderCourses(filteredCourses, activeAge);
+    durationSlider.value = 24;
+    const initialDuration = durationSlider.value;
+    document.getElementById('months-value').innerText = `до ${initialDuration} ${monthFilters(initialDuration)}`;
+  };
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', (event) => {
+      const targetTab = event.currentTarget;
+  
+      if (targetTab.matches('#pills-home-tab')) {
+        tabClickAge('kids');
+      } else if (targetTab.matches('#pills-profile-tab')) {
+        tabClickAge('teenagers');
+      } else if (targetTab.matches('#pills-contact-tab')) {
+        tabClickAge('adult');
+      }
+    });
   });
 
   // Обработчики для кнопок фильтрации
-  const filterButtons = document.querySelectorAll('.tabs__btn');
   filterButtons.forEach(button => {
     button.addEventListener('click', (event) => {
       currentCatId = parseInt(event.target.getAttribute('data-catId'), 10);
@@ -44,15 +64,11 @@ getData('/courses.json').then((data) => {
       filteredCourses = filterCourses(courses, activeAge, currentCatId);
       renderCourses(filteredCourses, activeAge);
       
-      updateFilteredCourses(); 
+      updateFilteredCourses();
     });
   });
 
   // Обработчики для радио-кнопок
-  const levelRadios = document.querySelectorAll('input[name="level"]');
-  const typeRadios = document.querySelectorAll('input[name="type"]');
-  const durationSlider = document.getElementById('months-slider');
-
   const updateFilteredCourses = () => {
     const selectedLevel = Array.from(levelRadios).find(radio => radio.checked)?.value || null;
     const selectedType = Array.from(typeRadios).find(radio => radio.checked)?.value || null;
@@ -72,14 +88,14 @@ getData('/courses.json').then((data) => {
 
   durationSlider.addEventListener('input', () => {
     const durationValue = durationSlider.value;
-    const monthsWord = monthFilters(durationValue);
-    document.getElementById('months-value').innerText = `${durationValue} ${monthsWord}`;
+    const monthsWord = monthFiltersWithPreposition(durationValue);
+    document.getElementById('months-value').innerText = `до ${durationValue} ${monthsWord}`;
     updateFilteredCourses();
   });
   const initialDuration = durationSlider.value;
-  document.getElementById('months-value').innerText = `${initialDuration} ${monthFilters(initialDuration)}`;
+  document.getElementById('months-value').innerText = `до ${initialDuration} ${monthFiltersWithPreposition(initialDuration)}`;
 
-  //reset
+  // reset
   resetBtn.forEach(reset => {
     reset.addEventListener('click', () => {
       currentCatId = null;
@@ -96,8 +112,10 @@ getData('/courses.json').then((data) => {
         
       durationSlider.value = 24;
       const initialDuration = durationSlider.value;
-      document.getElementById('months-value').innerText = `${initialDuration} ${monthFilters(initialDuration)}`;
+      document.getElementById('months-value').innerText = `до ${initialDuration} ${monthFiltersWithPreposition(initialDuration)}`;
     });
+
+    renderCourses(filteredCourses, activeAge);
   })
 }).catch(error => {
       console.error('Ошибка при загрузке курсов:', error);
