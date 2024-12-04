@@ -197,8 +197,15 @@
 
       &_chess {
         &::after {
-
           background-image: url('/images/hero/bg-chess-secondary.png');
+        }
+      }
+      &_content-course {
+        &::after {
+          background-image: none;
+        }
+        &::before {
+          background-image: none;
         }
       }
     }
