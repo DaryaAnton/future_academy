@@ -1,4 +1,4 @@
-import { monthFilters } from "../../../courses/scripts/modules/filterCourses";
+import { monthFilters } from "../../../courses/scripts/modules/filters";
 
 export const renderCourses = (courses, activeAge) => {
 
