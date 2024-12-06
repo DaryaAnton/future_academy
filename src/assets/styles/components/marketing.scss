@@ -1,0 +1,23 @@
+.marketing {
+  background-color: $color-blue--dark;
+  &__icon {
+    height: 54px;
+    width: auto;
+    margin-bottom: 32px;
+  }
+  &__number-bg {
+    position: absolute;
+    top: 43%;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: $width-md) {
+  .marketing {
+    &__number-bg {
+      position: absolute;
+      top: 31%;
+      z-index: 1;
+    }
+  }
+}
