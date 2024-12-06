@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main</title>
+</head>
+
+<body class="page-body">
+  <header class="fixed-top header-main header-main--light">
+    <nav class="navbar navbar-expand-xl py-2">
+      <div class="container">
+        <a href="index.html" class="header-main__logo me-xl-6">
+          <svg width="57" height="40">
+            <use xlink:href="/icons/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <button class="navbar-toggle d-xl-none order-1" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-icon"></span>
+        </button>
+        <ul class="row row-cols-auto align-items-center gx-4 d-none d-md-flex d-xl-none">
+          <li class="col dropdown">
+            <button class="dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false" type="button">
+              <svg width="17" height="20">
+                <use xlink:href="/icons/sprite.svg#pin"></use>
+              </svg>
+              <span>Нижний Новгород</span>
+
+              <svg class="dropdown-icon" width="10" height="7">
+                <use xlink:href="/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+
+            <div class="dropdown-menu">
+              <div class="dropdown-list">
+                <div class="form-check">
+                  <input class="form-check-input me-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Дзержинск
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input me-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                    checked="">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Нижний Новгород
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input me-1" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                  <label class="form-check-label" for="flexRadioDefault3">
+                    On-line
+                  </label>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="col">
+            <ul class="d-flex flex-column gap-1 gap-xl-0">
+              <li><a href="tel:8 800 950-33-98">8 800 950-33-98</a></li>
+            </ul>
+          </li>
+
+          <li class="col">
+            <a href="#!">
+              <svg width="18" height="19">
+                <use xlink:href="/icons/sprite.svg#user"></use>
+              </svg>
+              Войти
+            </a>
+          </li>
+        </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav align-items-xl-center gap-xl-4 me-xl-auto">
+            <li class="nav-item">
+              <a href="/courses/courses.html">
+                <svg width="20" height="16">
+                  <use xlink:href="/icons/sprite.svg#categories"></use>
+                </svg>Все курсы</a>
+            </li>
+            <li class="nav-item d-xl-none"><a href="/about-academy/about-academy.html">Об академии</a></li>
+            <li class="nav-item"><a href="/events/events.html">Мероприятия</a></li>
+            <li class="nav-item d-xl-none"><a href="/news/news.html">Новости</a></li>
+            <li class="nav-item"><a href="#!">Базы знаний</a></li>
+            <li class="nav-item"><a href="/career/career.html">Карьера</a></li>
+            <li class="nav-item d-xl-none"><a href="#!">Контакты</a></li>
+          </ul>
+
+          <ul class="row flex-column flex-xl-row row-cols-xl-auto align-items-center gx-4">
+            <li class="col dropdown mb-3 mb-xl-0 d-md-none d-xl-block" id="mobile-dropdown">
+              <button class="dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false" type="button">
+                <svg width="17" height="20">
+                  <use xlink:href="/icons/sprite.svg#pin"></use>
+                </svg>
+                <span>Нижний Новгород</span>
+
+                <svg class="dropdown-icon" width="10" height="7">
+                  <use xlink:href="/icons/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+
+              <div class="dropdown-menu">
+                <div class="dropdown-list">
+                  <div class="form-check">
+                    <input class="form-check-input me-1" type="radio" name="flexRadioDefaultM" id="flexRadioDefaultM1">
+                    <label class="form-check-label" for="flexRadioDefaultM1">
+                      Дзержинск
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input me-1" type="radio" name="flexRadioDefaultM" id="flexRadioDefaultM2"
+                      checked>
+                    <label class="form-check-label" for="flexRadioDefaultM2">
+                      Нижний Новгород
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input me-1" type="radio" name="flexRadioDefaultM" id="flexRadioDefaultM3">
+                    <label class="form-check-label" for="flexRadioDefaultM3">
+                      On-line
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="col order-1 order-xl-0">
+              <ul class="d-flex flex-column gap-1 gap-xl-0">
+                <li><a href="tel:8 800 950-33-98" class="d-md-none d-xl-block">8 800 950-33-98</a></li>
+                <li><a href="#!" class="d-xl-none">г. Москва, ул. Ленина, д. 50</a></li>
+                <li><a href="#!" class="d-xl-none">info@hodfutureacademy.ru</a></li>
+              </ul>
+            </li>
+
+            <li class="col mb-5 mb-xl-0 d-md-none d-xl-block">
+              <a href="#!">
+                <svg width="18" height="19">
+                  <use xlink:href="/icons/sprite.svg#user"></use>
+                </svg>
+                Войти
+              </a>
+            </li>
+          </ul>
+
+          <ul class="d-flex gap-4 d-xl-none header-main__socials">
+            <li><a href="#">
+                <svg width="20" height="12">
+                  <use xlink:href="/icons/sprite.svg#vk"></use>
+                </svg>
+              </a></li>
+            <li><a href="#">
+                <svg width="16" height="17">
+                  <use xlink:href="/icons/sprite.svg#instagram"></use>
+                </svg>
+              </a></li>
+            <li><a href="#">
+                <svg width="18" height="18">
+                  <use xlink:href="/icons/sprite.svg#facebook"></use>
+                </svg>
+              </a></li>
+            <li><a href="#">
+                <svg width="20" height="14">
+                  <use xlink:href="/icons/sprite.svg#youtube"></use>
+                </svg>
+              </a></li>
+            <li><a href="#">
+                <svg width="16" height="14">
+                  <use xlink:href="/icons/sprite.svg#telegram"></use>
+                </svg>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!--modal-->
+    <div class="modal fade" id="careerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+
+            <div class="owl">
+              <div class="container">
+                <div class="card pt-2 pt-md-4 pb-md-4 pe-lg-4 owl__card position-relative border-0">
+                  <div class="row">
+                    <div class="col-md-12 col-lg-7">
+
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="owl__message">
+                            <img class="owl__img img-fluid" src="/images/common/owl.svg" alt="owl">
+                          </div>
+                        </div>
+
+                        <div class="mb-5 col-8 offset-4 mb-lg-0">
+                          <div class="d-flex justify-content-center align-items-center">
+                            <div class="owl__speech">
+                              <span class="owl__tail"></span>
+                              <h6 class="owl__speech-title mb-1 fw-semibold">Помочь с выбором?</h6>
+                              <p class="owl__speech-text fw-medium">
+                                Оставьте заявку и наши специалисты свяжутся с вами, ответят на все вопросы
+                                и подберут подходящий вариант обучения.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-5">
+                      <div class="card-body">
+
+                        <form class="form ps-1 pe-1 ps-lg-0 pe-lg-0">
+                          <div class="form-group">
+                            <input type="text" class="form-control col-12 mb-2 form__input" placeholder="Ваше имя">
+                          </div>
+                          <div class="form-group justify-content-between">
+                            <div class="row">
+                              <div class="col-6 mb-2">
+                                <input type="text" class="form-control col-12 form__input" placeholder="Ваш телефон">
+                              </div>
+                              <div class="col-6">
+                                <input type="email" class="form-control col-12 form__input" placeholder="Ваш e-mail">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <div class="row mb-4 mb-md-0">
+                              <div class="col-6">
+                                <p class="m-0 form__text">
+                                  Нажимая на кнопку, я соглашаюсь
+                                  на обработку персональных
+                                  и с правилами по льзования Платформой
+                                </p>
+                              </div>
+
+                              <div class="col-6">
+                                <button type="submit" class="btn btn__orange col-12 w-100">Кнопка</button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/modal-->
+
+    <!--hero--career--------------------------->
+    <section class="hero hero--career mb-10">
+      <div class="hero__mobile-image d-md-none">
+        <img src="/images/hero/girl.jpg" alt="girl with notebook" height="224">
+      </div>
+
+      <div class="container z-1 position-relative">
+        <div class="row">
+          <div class="col col-md-7">
+            <h1 class="hero__title mb-4">Поможем построить карьеру</h1>
+            <p class="hero__text fw-semibold mb-5 mb-md-8 mb-lg-13">Карьерный центр ХОД Future Academy</p>
+
+            <button type="button" class="btn btn__orange" data-bs-toggle="modal" data-bs-target="#careerModal">Задать
+              вопрос о трудоустройстве</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--hero--career--------------------------->
+
+    <!--appeal---------------------------------->
+    <section class="appeal pt-3 pb-4 pt-md-5 pb-md-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 mb-4 mb-md-0 appeal__owl">
+
+            <div class="owl__speech">
+              <p class="owl__speech-text fw-medium">
+                С нами вы найдёте работу о которой мечтали
+              </p>
+              <span class="owl__tail owl__tail_appeal"></span>
+            </div>
+
+            <img class="owl__common" src="/images/common/owl.svg" alt="owl">
+          </div>
+          <div class="col-12 col-md-8">
+            <ul class="d-lg-flex">
+              <li class="mb-4 mb-lg-0">
+                <img class="mb-2" src="/images/appeal/x.svg" alt="x">
+                <h6 class="mb-2 fw-bold fs-4">Заголовок</h6>
+                <p class="me-1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi elit, egestas ut feugiat id, laoreet
+                  volutpat risus. Cras condimentum, ligula eget
+                </p>
+              </li>
+
+              <li class="mb-4 mb-lg-0">
+                <img class="mb-2" src="/images/appeal/circle.svg" alt="circle">
+                <h6 class="mb-2 fw-bold fs-4">Заголовок</h6>
+                <p class="me-1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi elit, egestas ut feugiat id, laoreet
+                  volutpat risus. Cras condimentum, ligula eget
+                </p>
+              </li>
+
+              <li>
+                <img class="mb-2" src="/images/appeal/triangle.svg" alt="triangle">
+                <h6 class="mb-2 fw-bold fs-4">Заголовок</h6>
+                <p class="me-1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi elit, egestas ut feugiat id, laoreet
+                  volutpat risus. Cras condimentum, ligula eget
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/appeal--------------------------------->
+
+    <!--counting-------------------------------->
+    <section class="counting pb-2 pb-md-8 pt-5 pt-md-8">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="fw-bold mb-2 title title_career">Почему вы точно найдете работу с ХОД Future Academy</h3>
+          </div>
+        </div>
+        <div class="row mt-2 mb-4">
+          <div class="col-10">
+            <p class="fs-6 lh-base">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis tellus feugiat, posuere magna
+              et, scelerisque leo. In scelerisque pulvinar sem, et gravida mi tincidunt nec. Suspendisse a ullamcorper
+              nisi. Duis et mauris et ex posuere dignissim vitae a diam. Praesent vulputate nulla sapien, nec auctor
+              nibh congue eu. Nulla lectus felis, luctus et sodales ac, convallis quis urna. Etiam id ultricies dolor,
+              non efficitur tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+          </div>
+        </div>
+
+        <ul class="row row-cols-auto g-2 g-md-8">
+          <li class="col">
+            <p class="counting__number text-gradient">600</p>
+            <p class="counting__text">Вакансий</p>
+          </li>
+          <li class="col">
+            <p class="counting__number text-gradient">82%</p>
+            <p class="counting__text">Трудоустроенных <br>студентов</p>
+          </li>
+          <li class="col">
+            <p class="counting__number text-gradient">98 795</p>
+            <p class="counting__text">Средняя зарплата <br> наших выпускников</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--counting-------------------------------->
+
+    <!--modal-->
+    <div class="modal fade" id="marketingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+
+            <div class="owl">
+              <div class="container">
+                <div class="card pt-2 pt-md-4 pb-md-4 pe-lg-4 owl__card position-relative border-0">
+                  <div class="row">
+                    <div class="col-md-12 col-lg-7">
+
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="owl__message">
+                            <img class="owl__img img-fluid" src="/images/common/owl.svg" alt="owl">
+                          </div>
+                        </div>
+
+                        <div class="mb-5 col-8 offset-4 mb-lg-0">
+                          <div class="d-flex justify-content-center align-items-center">
+                            <div class="owl__speech">
+                              <span class="owl__tail"></span>
+                              <h6 class="owl__speech-title mb-1 fw-semibold">Помочь с выбором?</h6>
+                              <p class="owl__speech-text fw-medium">
+                                Оставьте заявку и наши специалисты свяжутся с вами, ответят на все вопросы
+                                и подберут подходящий вариант обучения.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-5">
+                      <div class="card-body">
+
+                        <form class="form ps-1 pe-1 ps-lg-0 pe-lg-0">
+                          <div class="form-group">
+                            <input type="text" class="form-control col-12 mb-2 form__input" placeholder="Ваше имя">
+                          </div>
+                          <div class="form-group justify-content-between">
+                            <div class="row">
+                              <div class="col-6 mb-2">
+                                <input type="text" class="form-control col-12 form__input" placeholder="Ваш телефон">
+                              </div>
+                              <div class="col-6">
+                                <input type="email" class="form-control col-12 form__input" placeholder="Ваш e-mail">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <div class="row mb-4 mb-md-0">
+                              <div class="col-6">
+                                <p class="m-0 form__text">
+                                  Нажимая на кнопку, я соглашаюсь
+                                  на обработку персональных
+                                  и с правилами по льзования Платформой
+                                </p>
+                              </div>
+
+                              <div class="col-6">
+                                <button type="submit" class="btn btn__orange col-12 w-100">Кнопка</button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/modal-->
+
+    <!--marketing------------------------->
+    <section class="marketing pt-4 pb-6">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-12">
+            <h3 class="fw-bold mb-2 title text-center text-white">Ваш путь к трудоустройству</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-4 mb-4">
+            <div class="d-flex flex-column align-items-center position-relative">
+              <img class="marketing__number-bg" src="/images/marketing/number-bg/1.svg" alt="1">
+              <img class="marketing__icon" src="/images/accordion/accordion_x.svg" alt="x">
+              <p class="text-white fs-6 text-center position-relative z-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis tellus feugiat, posuere magna
+                et, scelerisque leo. In scelerisque pulvinar sem, et gravida mi tincidunt nec.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <div class="d-flex flex-column align-items-center position-relative">
+              <img class="marketing__number-bg" src="/images/marketing/number-bg/2.svg" alt="2">
+              <img class="marketing__icon" src="/images/accordion/accordion_circle.svg" alt="circle">
+              <p class="text-white fs-6 text-center position-relative z-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis tellus feugiat, posuere magna
+                et, scelerisque leo. In scelerisque pulvinar sem, et gravida mi tincidunt nec.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <div class="d-flex flex-column align-items-center position-relative">
+              <img class="marketing__number-bg" src="/images/marketing/number-bg/3.svg" alt="3">
+              <img class="marketing__icon" src="/images/accordion/accordion_triangle.svg" alt="triangle">
+              <p class="text-white fs-6 text-center position-relative z-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis tellus feugiat, posuere magna
+                et, scelerisque leo. In scelerisque pulvinar sem, et gravida mi tincidunt nec.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-center">
+            <button type="button" class="btn btn__orange" data-bs-toggle="modal" data-bs-target="#marketingModal">
+              Задать вопрос о трудоустройстве
+            </button>
+          </div>
+        </div>
+    </section>
+    <!--/marketing------------------------>
+
+    <!--vacancy--------------------------->
+    <section class="pb-4 pt-4 pt-md-6 pb-md-9">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-12">
+            <h3 class="fw-bold mb-2 title">Примеры активных вакансий</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 d-flex">
+            <a href="#!" class="card mb-2 me-1 pb-3 pt-2 ps-2 pe-2 bg_sky flex-fill">
+              <div class="card-body d-flex flex-column justify-content-between">
+
+                <div class="d-flex align-items-center mb-1">
+                  <h5 class="card-title fw-medium fs-6 fs-md-5">Графический дизайнер</h5>
+                </div>
+
+                <p class="card-text card-text_vacancy">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis tellus feugiat, posuere
+                  magna et, scelerisque leo.
+                </p>
+                <p class="event-list__wages">от 80 000 ₽ в месяц</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 d-flex">
+            <a href="#!" class="card mb-2 me-1 pb-3 pt-2 ps-2 pe-2 bg_green flex-fill">
+              <div class="card-body d-flex flex-column justify-content-between">
+
+                <div class="d-flex align-items-center mb-1">
+                  <h5 class="card-title fw-medium fs-6 fs-md-5">Веб-разработчик</h5>
+                </div>
+
+                <p class="card-text card-text_vacancy">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis tellus feugiat, posuere
+                  magna et, scelerisque leo.
+                </p>
+                <p class="event-list__wages">от 90 000 ₽ в месяц</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 d-flex">
+            <a href="#!" class="card mb-2 me-1 pb-3 pt-2 ps-2 pe-2 bg_orange flex-fill">
+              <div class="card-body d-flex flex-column justify-content-between">
+
+                <div class="d-flex align-items-center mb-1">
+                  <h5 class="card-title fw-medium fs-6 fs-md-5">Графический дизайнер</h5>
+                </div>
+
+                <p class="card-text card-text_vacancy">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis tellus feugiat, posuere
+                  magna et, scelerisque leo.
+                </p>
+                <p class="event-list__wages">от 80 000 ₽ в месяц</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 d-flex">
+            <a href="#!" class="card mb-2 me-1 pb-3 pt-2 ps-2 pe-2 bg_blue-light flex-fill">
+              <div class="card-body d-flex flex-column justify-content-between">
+
+                <div class="d-flex align-items-center mb-1">
+                  <h5 class="card-title fw-medium fs-6 fs-md-5">Графический дизайнер</h5>
+                </div>
+
+                <p class="card-text card-text_vacancy">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis tellus feugiat, posuere
+                  magna et, scelerisque leo.
+                </p>
+                <p class="event-list__wages">от 80 000 ₽ в месяц</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 d-flex">
+            <a href="#!" class="card mb-2 me-1 pb-3 pt-2 ps-2 pe-2 bg_yellow flex-fill">
+              <div class="card-body d-flex flex-column justify-content-between">
+
+                <div class="d-flex align-items-center mb-1">
+                  <h5 class="card-title fw-medium fs-6 fs-md-5">Веб-разработчик</h5>
+                </div>
+
+                <p class="card-text card-text_vacancy">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis tellus feugiat, posuere
+                  magna et, scelerisque leo.
+                </p>
+                <p class="event-list__wages">от 90 000 ₽ в месяц</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/vacancy-------------------------->
+
+    <!--partners-------------------------------->
+    <section class="mb-3 mb-lg-5">
+      <div class="container">
+        <div class="row mb-2 mb-md-4">
+          <div class="col-12">
+            <h5 class="fw-bold title text-start">Компании где уже работают наши студенты</h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-2 mb-2">
+            <div class="card card_partners">
+              <div class="card-body d-flex justify-content-center align-items-center">
+                <img src="/images/partners/t-bank.svg" alt="t-bank">
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-2">
+            <div class="card card_partners">
+              <div class="card-body d-flex justify-content-center align-items-center">
+                <img src="/images/partners/alfa-bank.svg" alt="alfa-bank">
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-2">
+            <div class="card card_partners">
+              <div class="card-body d-flex justify-content-center align-items-center">
+                <img src="/images/partners/vk.svg" alt="vk">
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-2">
+            <div class="card card_partners">
+              <div class="card-body d-flex justify-content-center align-items-center">
+                <img src="/images/partners/avito.svg" alt="avito">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2 mb-2">
+            <div class="card card_partners">
+              <div class="card-body d-flex justify-content-center align-items-center">
+                <img src="/images/partners/t-bank.svg" alt="t-bank">
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-2">
+            <div class="card card_partners">
+              <div class="card-body d-flex justify-content-center align-items-center">
+                <img src="/images/partners/alfa-bank.svg" alt="alfa-bank">
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-2">
+            <div class="card card_partners">
+              <div class="card-body d-flex justify-content-center align-items-center">
+                <img src="/images/partners/vk.svg" alt="vk">
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-2">
+            <div class="card card_partners">
+              <div class="card-body d-flex justify-content-center align-items-center">
+                <img src="/images/partners/avito.svg" alt="avito">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2 mb-2">
+            <div class="card card_partners">
+              <div class="card-body d-flex justify-content-center align-items-center">
+                <img src="/images/partners/t-bank.svg" alt="t-bank">
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-2">
+            <div class="card card_partners">
+              <div class="card-body d-flex justify-content-center align-items-center">
+                <img src="/images/partners/alfa-bank.svg" alt="alfa-bank">
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-2">
+            <div class="card card_partners">
+              <div class="card-body d-flex justify-content-center align-items-center">
+                <img src="/images/partners/vk.svg" alt="vk">
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-2">
+            <div class="card card_partners">
+              <div class="card-body d-flex justify-content-center align-items-center">
+                <img src="/images/partners/avito.svg" alt="avito">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/partners------------------------------->
+
+    <!--card-reviews---------------------------->
+    <section class="card-reviews">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="text-white fw-bold text-center title mb-3">Истории успеха</h3>
+          </div>
+        </div>
+
+        <div class="splide" id="card-reviews" role="group" aria-label=""
+          data-splide='{"type":"loop","perPage":6, "breakpoints": {"1400": {"perPage": 4},"1200": {"perPage": 3}, "768": {"perPage": 2}, "576": {"perPage": 1}}}'>
+          <div class="splide__track">
+            <ul class="splide__list">
+
+              <li class="splide__slide">
+                <div class="card">
+                  <div class="card-body p-2">
+                    <div class="row card-reviews__wrapper">
+                      <div class="col-4 d-flex justify-content-center align-items-start ">
+                        <img class="card-reviews__img" src="/images/cards/card-reviews/mini_prev_1.svg" alt="foto">
+                      </div>
+                      <div class="col-8">
+                        <h5 class="card-title fw-bold card-reviews__title">Имя Фамилия</h5>
+                        <h6 class="card-subtitle mb-2 fw-medium card-reviews__subtitle">Студент курса «WEB-разработчик»
+                        </h6>
+                      </div>
+                    </div>
+
+                    <p class="card-text fw-medium mb-1 mb-lg-2 card-reviews__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                      tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac
+                      habitasse
+                      platea dictumst. In ut dui sodales.
+                    </p>
+                    <div class="fw-medium d-flex align-items-center">
+                      <img src="/images/common/star_reviews.svg" alt="star">
+                      <p class="ms-1">4,87 / 5</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="card">
+                  <div class="card-body p-2">
+                    <div class="row card-reviews__wrapper">
+                      <div class="col-4 d-flex justify-content-center align-items-start ">
+                        <img class="card-reviews__img" src="/images/cards/card-reviews/mini_prev_2.svg" alt="foto">
+                      </div>
+                      <div class="col-8">
+                        <h5 class="card-title fw-bold card-reviews__title">Имя Фамилия</h5>
+                        <h6 class="card-subtitle mb-2 fw-medium card-reviews__subtitle">Студент курса «WEB-разработчик»
+                        </h6>
+                      </div>
+                    </div>
+
+                    <p class="card-text fw-medium mb-1 mb-lg-2 card-reviews__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                      tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac
+                      habitasse
+                      platea dictumst. In ut dui sodales.
+                    </p>
+                    <div class="fw-medium d-flex align-items-center">
+                      <img src="/images/common/star_reviews.svg" alt="star">
+                      <p class="ms-1">4,87 / 5</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="card">
+                  <div class="card-body p-2">
+                    <div class="row card-reviews__wrapper">
+                      <div class="col-4 d-flex justify-content-center align-items-start ">
+                        <img class="card-reviews__img" src="/images/cards/card-reviews/mini_prev_3.svg" alt="foto">
+                      </div>
+                      <div class="col-8">
+                        <h5 class="card-title fw-bold card-reviews__title">Имя Фамилия</h5>
+                        <h6 class="card-subtitle mb-2 fw-medium card-reviews__subtitle">Студент курса «WEB-разработчик»
+                        </h6>
+                      </div>
+                    </div>
+
+                    <p class="card-text fw-medium mb-1 mb-lg-2 card-reviews__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                      tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac
+                      habitasse
+                      platea dictumst. In ut dui sodales.
+                    </p>
+                    <div class="fw-medium d-flex align-items-center">
+                      <img src="/images/common/star_reviews.svg" alt="star">
+                      <p class="ms-1">4,87 / 5</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="card">
+                  <div class="card-body p-2">
+                    <div class="row card-reviews__wrapper">
+                      <div class="col-4 d-flex justify-content-center align-items-start ">
+                        <img class="card-reviews__img" src="/images/cards/card-reviews/mini_prev_4.svg" alt="foto">
+                      </div>
+                      <div class="col-8">
+                        <h5 class="card-title fw-bold card-reviews__title">Имя Фамилия</h5>
+                        <h6 class="card-subtitle mb-2 fw-medium card-reviews__subtitle">Студент курса «WEB-разработчик»
+                        </h6>
+                      </div>
+                    </div>
+
+                    <p class="card-text fw-medium mb-1 mb-lg-2 card-reviews__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                      tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac
+                      habitasse
+                      platea dictumst. In ut dui sodales.
+                    </p>
+                    <div class="fw-medium d-flex align-items-center">
+                      <img src="/images/common/star_reviews.svg" alt="star">
+                      <p class="ms-1">4,87 / 5</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="card">
+                  <div class="card-body p-2">
+                    <div class="row card-reviews__wrapper">
+                      <div class="col-4 d-flex justify-content-center align-items-start ">
+                        <img class="card-reviews__img" src="/images/cards/card-reviews/mini_prev_2.svg" alt="foto">
+                      </div>
+                      <div class="col-8">
+                        <h5 class="card-title fw-bold card-reviews__title">Имя Фамилия</h5>
+                        <h6 class="card-subtitle mb-2 fw-medium card-reviews__subtitle">Студент курса «WEB-разработчик»
+                        </h6>
+                      </div>
+                    </div>
+
+                    <p class="card-text fw-medium mb-1 mb-lg-2 card-reviews__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                      tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac
+                      habitasse
+                      platea dictumst. In ut dui sodales.
+                    </p>
+                    <div class="fw-medium d-flex align-items-center">
+                      <img src="/images/common/star_reviews.svg" alt="star">
+                      <p class="ms-1">4,87 / 5</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="card">
+                  <div class="card-body p-2">
+                    <div class="row card-reviews__wrapper">
+                      <div class="col-4 d-flex justify-content-center align-items-start ">
+                        <img class="card-reviews__img" src="/images/cards/card-reviews/mini_prev_4.svg" alt="foto">
+                      </div>
+                      <div class="col-8">
+                        <h5 class="card-title fw-bold card-reviews__title">Имя Фамилия</h5>
+                        <h6 class="card-subtitle mb-2 fw-medium card-reviews__subtitle">Студент курса «WEB-разработчик»
+                        </h6>
+                      </div>
+                    </div>
+
+                    <p class="card-text fw-medium mb-1 mb-lg-2 card-reviews__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id
+                      tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac
+                      habitasse
+                      platea dictumst. In ut dui sodales.
+                    </p>
+                    <div class="fw-medium d-flex align-items-center">
+                      <img src="/images/common/star_reviews.svg" alt="star">
+                      <p class="ms-1">4,87 / 5</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+          <!--progress-->
+          <div class="container">
+            <div class="my-carousel-progress">
+              <div class="my-carousel-progress-bar"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--/card-reviews--------------------------->
+
+
+    <!--privilege------------------------------->
+    <section class="privilege pt-3 pb-3 pt-lg-8 pb-lg-15">
+      <div class="container">
+        <div class="row text-center">
+          <h5 class="fw-bold title text-center">Помогаем с трудоустройством</h5>
+        </div>
+
+        <div class="row d-flex align-items-center mt-2 mt-lg-6">
+          <div class="col-6 col-lg-3 mb-2 mb-lg-0">
+            <div class="privilege__wrapper">
+              <img class="mb-2 mb-lg-3" src="/images/common/pappers.png" alt="">
+              <p class="fw-medium privilege__text">
+                Передовой подход
+                к образовательному процессу
+              </p>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3 mb-2 mb-lg-0">
+            <div class="privilege__wrapper">
+              <img class="mb-2 mb-lg-3" src="/images/common/book.png" alt="">
+              <p class="fw-medium privilege__text">
+                Непрерывное усовершенствование
+                и пополнение базы курсов
+              </p>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="privilege__wrapper">
+              <img class="mb-2 mb-lg-3" src="/images/common/planning.png" alt="">
+              <p class="fw-medium privilege__text">
+                Только практикующие преподаватели
+              </p>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="privilege__wrapper">
+              <img class="mb-2 mb-lg-3" src="/images/common/man.png" alt="">
+              <p class="fw-medium privilege__text">
+                Сопровождение на всех этапах. От начала обучения до трудоустройства
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--/privilege------------------------------>
+
+  </main>
+
+
+  <!--footer------------------------------------>
+  <footer>
+
+    <!--owl-->
+    <div class="owl">
+      <div class="container">
+        <div class="card pt-2 pt-md-4 pb-md-4 pe-lg-4 owl__card position-relative border-0">
+          <div class="row">
+            <div class="col-md-12 col-lg-7">
+
+              <div class="row">
+                <div class="col-4">
+                  <div class="owl__message">
+                    <img class="owl__img img-fluid" src="/images/common/owl.svg" alt="owl">
+                  </div>
+                </div>
+
+                <div class="mb-5 col-8 offset-4 mb-lg-0">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="owl__speech">
+                      <span class="owl__tail"></span>
+                      <h6 class="owl__speech-title mb-1 fw-semibold">Помочь с выбором?</h6>
+                      <p class="owl__speech-text fw-medium">
+                        Оставьте заявку и наши специалисты свяжутся с вами, ответят на все вопросы
+                        и подберут подходящий вариант обучения.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 col-lg-5">
+              <div class="card-body">
+
+                <form class="form ps-1 pe-1 ps-lg-0 pe-lg-0">
+                  <div class="form-group">
+                    <input type="text" class="form-control col-12 mb-2 form__input" placeholder="Ваше имя">
+                  </div>
+                  <div class="form-group justify-content-between">
+                    <div class="row">
+                      <div class="col-6 mb-2">
+                        <input type="text" class="form-control col-12 form__input" placeholder="Ваш телефон">
+                      </div>
+                      <div class="col-6">
+                        <input type="email" class="form-control col-12 form__input" placeholder="Ваш e-mail">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="row mb-4 mb-md-0">
+                      <div class="col-6">
+                        <p class="m-0 form__text">
+                          Нажимая на кнопку, я соглашаюсь
+                          на обработку персональных
+                          и с правилами по льзования Платформой
+                        </p>
+                      </div>
+
+                      <div class="col-6">
+                        <button type="submit" class="btn btn__orange col-12 w-100">Кнопка</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+      <div class="container">
+        <div class="row pt-7 pb-md-5 pb-xl-7">
+
+          <!--col-->
+          <div
+            class="d-flex col-md-12 align-items-center justify-content-center mb-md-3 col-xl-3 justify-content-xl-start mb-xl-0">
+            <div class="footer__wrapper">
+
+              <div class="footer__logo">
+                <svg class="icon" width="83" height="58">
+                  <use xlink:href="/icons/sprite.svg#logo"></use>
+                </svg>
+              </div>
+
+              <ul>
+                <li>
+                  <a class="footer__list" href="#!">8 800 950-33-98</a>
+                </li>
+                <li>
+                  <a href="#!">г. Москва, ул. Ленина, д. 50</a>
+                </li>
+                <li>
+                  <a href="#!">info@hodfutureacademy.ru</a>
+                </li>
+              </ul>
+
+              <div class="d-flex footer__social">
+                <a class="footer__social-svg" href="#!">
+                  <svg class="icon" width="20" height="12">
+                    <use xlink:href="/icons/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+                <a class="footer__social-svg" href="#!">
+                  <svg class="icon" width="16" height="17">
+                    <use xlink:href="/icons/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+                <a class="footer__social-svg" href="#!">
+                  <svg class="icon" width="18" height="18">
+                    <use xlink:href="/icons/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+                <a class="footer__social-svg" href="#!">
+                  <svg class="icon" width="20" height="14">
+                    <use xlink:href="/icons/sprite.svg#youtube"></use>
+                  </svg>
+                </a>
+                <a class="footer__social-svg" href="#!">
+                  <svg class="icon" width="16" height="14">
+                    <use xlink:href="/icons/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </div>
+
+              <p class="footer__copyright">© ХОД, Future Academy</p>
+            </div>
+          </div><!--/col-->
+
+          <!--col-->
+          <div class="d-none d-md-flex col-md-3 col-xl-2">
+            <div class="footer__wrapper">
+              <h6>Детям</h6>
+              <ul>
+                <li>
+                  <a href="#!">Робототехника</a>
+                </li>
+                <li>
+                  <a href="#!">Создание игр</a>
+                </li>
+                <li>
+                  <a href="#!">Программирование</a>
+                </li>
+                <li>
+                  <a href="#!">Мультимедиа</a>
+                </li>
+                <li>
+                  <a href="#!">Soft skills</a>
+                </li>
+                <li>
+                  <a href="#!">Шахматы</a>
+                </li>
+                <li>
+                  <a href="#!">Блогинг</a>
+                </li>
+                <li>
+                  <a href="#!">Программирование</a>
+                </li>
+                <li>
+                  <a href="#!">Создание игр</a>
+                </li>
+                <li>
+                  <a href="#!">Мультимедиа</a>
+                </li>
+                <li>
+                  <a href="#!">Soft skills</a>
+                </li>
+              </ul>
+            </div>
+          </div><!--/col-->
+
+          <!--col-->
+          <div class="d-none d-md-flex col-md-3 col-xl-2">
+            <div class="footer__wrapper">
+              <h6>Подросткам</h6>
+              <ul>
+                <li>
+                  <a href="#!">Web-разработка</a>
+                </li>
+                <li>
+                  <a href="#!">Прикладное программирование</a>
+                </li>
+                <li>
+                  <a href="#!">Графическое моделирование</a>
+                </li>
+                <li>
+                  <a href="#!">Game Development</a>
+                </li>
+                <li>
+                  <a href="#!">Soft skills</a>
+                </li>
+                <li>
+                  <a href="#!">Разработчик мобильных приложений</a>
+                </li>
+                <li>
+                  <a href="#!">Блогинг</a>
+                </li>
+                <li>
+                  <a href="#!">Создание игр</a>
+                </li>
+                <li>
+                  <a href="#!">Программирование игр</a>
+                </li>
+                <li>
+                  <a href="#!">Мультимедиа</a>
+                </li>
+                <li>
+                  <a href="#!">Soft skills</a>
+                </li>
+              </ul>
+            </div>
+          </div><!--/col-->
+
+          <!--col-->
+          <div class="d-none d-md-flex col-md-3 col-xl-2">
+            <div class="footer__wrapper">
+              <h6>Взрослым</h6>
+              <ul>
+                <li>
+                  <a href="#!">Разработчик игр на Unity</a>
+                </li>
+                <li>
+                  <a href="#!">Разработка ПО</a>
+                </li>
+                <li>
+                  <a href="#!">Графический Дизайн</a>
+                </li>
+                <li>
+                  <a href="#!">Тестировщик ПО</a>
+                </li>
+                <li>
+                  <a href="#!">Интернет Маркетинг</a>
+                </li>
+                <li>
+                  <a href="#!">Java-разработчик</a>
+                </li>
+                <li>
+                  <a href="#!">Python–разработчик</a>
+                </li>
+                <li>
+                  <a href="#!">IOS-разработчик</a>
+                </li>
+                <li>
+                  <a href="#!">Программирование</a>
+                </li>
+              </ul>
+            </div>
+          </div><!--/col-->
+
+          <!--col-->
+          <div class="d-none d-md-flex col-md-3 col-xl-2">
+            <div class="footer__wrapper">
+              <h6>Информация</h6>
+              <ul>
+                <li>
+                  <a href="/about-academy/about-academy.html">Об академии</a>
+                </li>
+                <li>
+                  <a href="/events/events.html">Мероприятия</a>
+                </li>
+                <li>
+                  <a href="/news/news.html">Новости</a>
+                </li>
+                <li>
+                  <a href="#!">База знаний</a>
+                </li>
+                <li>
+                  <a href="/career/career.html">Карьера</a>
+                </li>
+                <li>
+                  <a href="#!">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div><!--/col-->
+
+        </div><!--/row-->
+      </div><!--/container-->
+    </div><!--/footer-->
+  </footer>
+  <!--/footer----------------------------------->
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
